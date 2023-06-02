@@ -56,3 +56,25 @@ toggleButtons.forEach((button) => {
     cardContent.classList.toggle("is-visible");
   });
 });
+
+// Fonction pour faire défiler la page jusqu'au h3 correspondant à la lettre cliquée
+function scrollToLetter(letter) {
+  const letterHeader = document.querySelector(
+    'h3.letter[data-letter="' + letter + '"]'
+  );
+  if (letterHeader) {
+    letterHeader.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+// Générer les boutons pour chaque lettre de l'alphabet
+const alphabetButtonsContainer = document.getElementById("alphabetButtons");
+for (let i = 0; i < 26; i++) {
+  const letter = String.fromCharCode(65 + i); // Convertir le code ASCII en lettre (A = 65, B = 66, etc.)
+  const button = document.createElement("button");
+  button.textContent = letter;
+  button.addEventListener("click", function () {
+    scrollToLetter(letter);
+  });
+  alphabetButtonsContainer.appendChild(button);
+}
