@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Def'Web</title>
+  </head>
+  <body>
+    <header>
+      <h1>Def'Web</h1>
+      <form>
+        <input name="searchNotion" id="searchNotion" placeholder="Rechercher" />
+        <button type="submit">Rechercher</button>
+        <p id="notionMessage"></p>
+      </form>
+    </header>
+    <main>
+      <section class="category">
+        <h2>Front</h2>
+
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">HTML</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              HTML (Hypertext Markup Language) est le langage de balisage
+              standard utilisé pour structurer et présenter le contenu sur le
+              web.
+            </p>
+            <p class="card-example">Exemple de code HTML :</p>
+            <pre><code>&lt;html&gt;
+            &lt;head&gt;
+              &lt;title&gt;Titre de la page&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Bonjour, monde !&lt;/h1&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;</code></pre>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">CSS</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              CSS (Cascading Style Sheets) est un langage de feuille de style
+              utilisé pour décrire la présentation et le style des documents
+              HTML.
+            </p>
+            <p class="card-example">Exemple de code CSS :</p>
+            <pre><code>body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+          }
+          
+          h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+          }</code></pre>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">JavaScript</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              JavaScript est un langage de programmation utilisé pour ajouter
+              des fonctionnalités interactives aux pages web.
+            </p>
+            <p class="card-example">Exemple de code JavaScript :</p>
+            <pre><code>const greeting = 'Hello, world!';
+          console.log(greeting);</code></pre>
+          </div>
+        </section>
+      </section>
+      <section class="category">
+        <h2>Back</h2>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">PHP</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              PHP est un langage de script côté serveur utilisé principalement
+              pour le développement web. Il est souvent utilisé pour générer des
+              pages web dynamiques en se connectant à des bases de données.
+            </p>
+            <p class="card-example">Exemple de code PHP :</p>
+            <pre><code>&lt;?php
+            $message = "Bonjour, monde !";
+            echo $message;
+          ?&gt;</code></pre>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">SQL</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              SQL (Structured Query Language) est un langage de programmation
+              utilisé pour gérer et manipuler des bases de données
+              relationnelles. Il permet de créer, modifier et interroger les
+              données stockées dans une base de données.
+            </p>
+            <p class="card-example">Exemple de code SQL :</p>
+            <pre><code>SELECT * FROM users WHERE age &gt; 18;</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section class="category">
+        <h2>Langages de Programmation</h2>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">A+</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              A+ est un langage de programmation éducatif conçu pour enseigner
+              les concepts de base de la programmation. Il met l'accent sur la
+              simplicité et la lisibilité du code, ce qui en fait un choix idéal
+              pour les débutants.
+            </p>
+            <p class="card-example">Exemple de code A+ :</p>
+            <pre><code>afficher("Bonjour, monde !");</code></pre>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">A++</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              A++ est un langage de programmation qui étend les fonctionnalités
+              du langage A. Il est principalement utilisé pour le développement
+              d'applications scientifiques et mathématiques.
+            </p>
+            <p class="card-example">Exemple de code A++ :</p>
+            <pre><code>fonction factorielle(n)
+            si n = 0 alors
+              retourne 1
+            sinon
+              retourne n * factorielle(n - 1)
+            fin si
+          fin fonction</code></pre>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">A Sharp (.NET)</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              A# (.NET) est un langage de programmation orienté objet qui fait
+              partie de la plateforme .NET développée par Microsoft. Il offre
+              des fonctionnalités avancées pour la création d'applications
+              Windows et Web.
+            </p>
+            <p class="card-example">Exemple de code A# (.NET) :</p>
+            <pre><code>using System;
+          
+          class Program
+          {
+            static void Main(string[] args)
+            {
+              Console.WriteLine("Bonjour, monde !");
+            }
+          }</code></pre>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">A# (Axiom)</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              A# (Axiom) est un langage de programmation fonctionnel basé sur le
+              système de calcul formel Axiom. Il est utilisé pour la résolution
+              de problèmes mathématiques complexes.
+            </p>
+            <p class="card-example">Exemple de code A# (Axiom) :</p>
+            <pre><code>factorial(n) ==
+            if n = 0 then 1 else n * factorial(n - 1)
+          
+          output(factorial(5))</code></pre>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">A-0 System</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              A-0 System est un langage de programmation historique développé
+              dans les années 1950. Il a été utilisé pour la modélisation et la
+              simulation de systèmes complexes.
+            </p>
+            <p class="card-example">Exemple de code A-0 System :</p>
+            <pre><code>INPUT X1
+          X2 = X1 + 10
+          OUTPUT X2</code></pre>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">ABAL</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              ABAL (Advanced Business Application Programming Language) est un
+              langage de programmation développé par IBM pour la programmation
+              des systèmes IBM i.
+            </p>
+            <p class="card-example">Exemple de code ABAL :</p>
+            <pre><code>DCL VAR(&amp;MESSAGE) TYPE(*CHAR) LEN(20)
+          CHGVAR VAR(&amp;MESSAGE) VALUE('Bonjour, monde !')
+          SNDPGMMSG MSG(&amp;MESSAGE)</code></pre>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">ABAL++</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              ABAL++ est une version étendue du langage ABAL qui prend en charge
+              les fonctionnalités avancées de la programmation orientée objet.
+              Il est utilisé pour le développement d'applications sur les
+              systèmes IBM i.
+            </p>
+            <p class="card-example">Exemple de code ABAL++ :</p>
+            <pre><code>class HelloWorld
+          {
+            void main()
+            {
+              message("Bonjour, monde !");
+            }
+          }</code></pre>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">ABAP</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              ABAP (Advanced Business Application Programming) est un langage de
+              programmation utilisé pour le développement d'applications dans le
+              système SAP. Il est principalement utilisé pour la programmation
+              d'applications d'entreprise.
+            </p>
+            <p class="card-example">Exemple de code ABAP :</p>
+            <pre><code>DATA: message TYPE string.
+          message = 'Bonjour, monde !'.
+          WRITE: / message.</code></pre>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <a href="mentions_legales.html">Mentions légales</a>
+      <p>&#9426; 2023</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

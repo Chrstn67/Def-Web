@@ -1,0 +1,135 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222222c5;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="text"],
+button {
+  font-size: 1em;
+  padding: 10px;
+}
+button {
+  background: #26a0da;
+}
+button:hover {
+  background: #314755;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+.category {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.card {
+  background: linear-gradient(45deg, #314755, #26a0da);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.card-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.card-toggle {
+  background-color: #444;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.card-toggle:hover {
+  background-color: #666;
+}
+
+.card-content {
+  display: none;
+}
+
+.card-content.is-visible {
+  display: block;
+  margin-top: 10px;
+}
+
+.card-definition,
+.card-example {
+  font-size: 1rem;
+}
+
+.card-example {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+pre {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  overflow: auto;
+  margin: 0;
+}
+
+code {
+  display: block;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.highlight {
+  background: linear-gradient(45deg, #9ec3da, #ff00ff);
+}
