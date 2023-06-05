@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Def'Web</title>
+  </head>
+  <body>
+    <header>
+      <h1>Def'Web</h1>
+      <form>
+        <input name="searchVocab" id="searchVocab" placeholder="Rechercher" />
+        <button type="submit">Rechercher</button>
+        <p id="vocabMessage"></p>
+      </form>
+      <div id="alphabetButtons"></div>
+    </header>
+    <main>
+      <section class="category">
+        <h2>Vocabulaire</h2>
+        <h3 class="letter" data-letter="A">A</h3>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">A+</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              A+ est un langage de programmation éducatif conçu pour enseigner
+              les concepts de base de la programmation. Il met l'accent sur la
+              simplicité et la lisibilité du code, ce qui en fait un choix idéal
+              pour les débutants.
+            </p>
+            <p class="card-example">Exemple de code A+ :</p>
+            <pre><code>afficher("Bonjour, monde !");</code></pre>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <a href="mentions_legales.html">Mentions légales</a>
+      <p>&#9426; 2023</p>
+    </footer>
+    <script src="vocabulaire.js"></script>
+  </body>
+</html>

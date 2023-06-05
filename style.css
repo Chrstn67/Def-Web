@@ -1,5 +1,5 @@
 body {
-  background-color: #111;
+  background-color: #353434;
   color: #fff;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -34,6 +34,29 @@ button {
 button:hover {
   background: #314755;
   color: #fff;
+}
+
+.button-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 6em;
+}
+.menu {
+  font-size: 1em;
+  padding: 10px;
+  height: 5em;
+}
+.menu {
+  background: #26a0da;
+}
+.menu:hover {
+  background: #314755;
+  color: #fff;
+}
+
+p {
+  font-size: 1.2em;
 }
 
 main {

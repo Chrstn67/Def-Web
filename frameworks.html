@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Def'Web</title>
+  </head>
+  <body>
+    <header>
+      <h1>Def'Web</h1>
+      <form>
+        <input name="searchFrame" id="searchFrame" placeholder="Rechercher" />
+        <button type="submit">Rechercher</button>
+        <p id="frameMessage"></p>
+      </form>
+      <div id="alphabetButtons"></div>
+    </header>
+    <main>
+      <section class="category">
+        <h2>Frameworks</h2>
+        <h3 class="letter" data-letter="A">A</h3>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Angular</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">Angular....</p>
+            <p class="card-example">Exemple de code Angular :</p>
+            <pre><code></code></pre>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <a href="mentions_legales.html">Mentions légales</a>
+      <p>&#9426; 2023</p>
+    </footer>
+    <script src="frameworks.js"></script>
+  </body>
+</html>
