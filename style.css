@@ -39,8 +39,7 @@ button:hover {
 .button-menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 6em;
+  justify-content: center;
 }
 .menu {
   font-size: 1em;

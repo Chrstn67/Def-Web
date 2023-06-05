@@ -10,6 +10,20 @@
   <body>
     <header>
       <h1>Def'Web</h1>
+      <section class="button-menu">
+        <a href="index.html">
+          <button class="menu">Accueil</button>
+        </a>
+        <a href="langages.html">
+          <button class="menu">Def' Langages</button>
+        </a>
+        <a href="frameworks.html">
+          <button class="menu">Def' Frameworks</button>
+        </a>
+        <a href="vocabulaire.html">
+          <button class="menu">Def' Vocabulaire</button>
+        </a>
+      </section>
       <form>
         <input name="searchVocab" id="searchVocab" placeholder="Rechercher" />
         <button type="submit">Rechercher</button>
@@ -20,21 +34,24 @@
     <main>
       <section class="category">
         <h2>Vocabulaire</h2>
-        <h3 class="letter" data-letter="A">A</h3>
+        <h3 class="letter" data-letter="T">T</h3>
         <section class="card">
           <div class="card-header">
-            <h3 class="card-title">A+</h3>
+            <h3 class="card-title">Twig</h3>
             <button class="card-toggle">Voir</button>
           </div>
           <div class="card-content">
             <p class="card-definition">
-              A+ est un langage de programmation éducatif conçu pour enseigner
-              les concepts de base de la programmation. Il met l'accent sur la
-              simplicité et la lisibilité du code, ce qui en fait un choix idéal
-              pour les débutants.
+              Twig est un moteur de template pour le langage de programmation
+              PHP. Il permet de séparer la logique métier de la présentation en
+              utilisant des fichiers de template. Twig offre une syntaxe claire
+              et concise pour générer des pages web dynamiques.
             </p>
-            <p class="card-example">Exemple de code A+ :</p>
-            <pre><code>afficher("Bonjour, monde !");</code></pre>
+            <p class="card-example">Exemple de code Twig :</p>
+            <pre><code>{% raw %}
+        &lt;h1&gt;{{ title }}&lt;/h1&gt;
+        &lt;p&gt;{{ content }}&lt;/p&gt;
+        {% endraw %}</code></pre>
           </div>
         </section>
       </section>

@@ -56,10 +56,16 @@ function scrollToLetter(letter) {
 const alphabetButtonsContainer = document.getElementById("alphabetButtons");
 for (let i = 0; i < 26; i++) {
   const letter = String.fromCharCode(65 + i);
-  const button = document.createElement("button");
-  button.textContent = letter;
-  button.addEventListener("click", function () {
-    scrollToLetter(letter);
-  });
-  alphabetButtonsContainer.appendChild(button);
+
+  const letterHeaders = document.querySelectorAll(
+    'h3.letter[data-letter="' + letter + '"]'
+  );
+  if (letterHeaders.length > 0) {
+    const button = document.createElement("button");
+    button.textContent = letter;
+    button.addEventListener("click", function () {
+      scrollToLetter(letter);
+    });
+    alphabetButtonsContainer.appendChild(button);
+  }
 }
