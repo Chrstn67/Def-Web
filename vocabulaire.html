@@ -2157,6 +2157,37 @@
             <pre><code>&lt;kdb&gt;Ctrl + C&lt;/kdb&gt;</code></pre>
           </div>
         </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Keyframes</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les keyframes sont utilisés en CSS pour définir des étapes
+              d'animation à travers lesquelles un élément passe de son état
+              initial à son état final. Ils permettent de contrôler et d'animer
+              les propriétés d'un élément à différents moments de l'animation.
+            </p>
+            <p class="card-example">Exemple d'utilisation des Keyframes :</p>
+            <pre><code>@keyframes myAnimation {
+          0% {
+            opacity: 0;
+          }
+          50% {
+            opacity: 0.5;
+            transform: scale(1.2);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+        .element {
+        animation: myAnimation 2s infinite;
+        }</code></pre>
+          </div>
+        </section>
         <h3 class="letter" data-letter="L">L</h3>
         <section class="card">
           <div class="card-header">
@@ -2533,6 +2564,30 @@
             <pre><code>fetch('https://api.example.com/data')
           .then(response => response.json())
           .then(data => console.log(data));</code></pre>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Media Queries</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les media queries sont utilisées en CSS pour appliquer des styles
+              différents en fonction des caractéristiques du périphérique et de
+              l'affichage, telles que la taille de l'écran, l'orientation, la
+              résolution et bien d'autres.
+            </p>
+            <p class="card-example">
+              Exemple d'utilisation des Media Queries :
+            </p>
+            <pre><code>@media screen and (max-width: 768px) {
+  /* Styles appliqués aux écrans d'une largeur maximale de 768px */
+  body {
+    font-size: 14px;
+  }
+}</code></pre>
           </div>
         </section>
         <section class="card">
@@ -4230,7 +4285,34 @@ line-height: 1.5em;
       }</code></pre>
           </div>
         </section>
-
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">useDispatch</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              useDispatch est un hook fourni par la bibliothèque de gestion
+              d'état Redux dans le développement d'applications React. Il permet
+              d'envoyer des actions vers le store Redux, ce qui déclenche les
+              modifications de l'état de l'application.
+            </p>
+            <p class="card-example">Exemple d'utilisation de useDispatch :</p>
+            <pre><code>import { useDispatch } from 'react-redux';
+        
+        const MyComponent = () => {
+          const dispatch = useDispatch();
+        
+          const handleClick = () => {
+            dispatch({ type: 'INCREMENT' });
+          };
+        
+          return (
+            <button onClick={handleClick}>Incrémenter</button>
+          );
+        };</code></pre>
+          </div>
+        </section>
         <section class="card">
           <div class="card-header">
             <h3 class="card-title">useEffect</h3>
