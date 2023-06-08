@@ -89,6 +89,27 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">API</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Une API (Application Programming Interface) est un ensemble de
+              règles et de protocoles qui permettent à différents logiciels de
+              communiquer entre eux. Elle définit les méthodes de communication
+              et les formats de données pour l'échange d'informations entre les
+              applications.
+            </p>
+            <p class="card-example">Exemple d'utilisation d'une API :</p>
+            <pre><code>fetch('https://api.example.com/data')
+          .then(response => response.json())
+          .then(data => {
+            // Traitement des données reçues
+          });</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">article</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -1070,7 +1091,7 @@
         <h3 class="letter" data-letter="D">D</h3>
         <section class="card">
           <div class="card-header">
-            <h3 class="card-title">data</h3>
+            <h3 class="card-title">data (balise)</h3>
             <button class="card-toggle">Voir</button>
           </div>
           <div class="card-content">
@@ -1082,6 +1103,28 @@
             </p>
             <p class="card-example">Exemple de balise data :</p>
             <pre><code>&lt;p&gt;La population mondiale est d'environ &lt;data value="7800000000"&gt;&lt;/data&gt; habitants.&lt;/p&gt;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Data (données)</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les données représentent des informations stockées et utilisées
+              dans un système informatique. Elles peuvent prendre différentes
+              formes, telles que des textes, des nombres, des images, des
+              fichiers, etc. Les données sont manipulées, traitées et analysées
+              par les programmes informatiques pour effectuer des opérations et
+              fournir des résultats.
+            </p>
+            <p class="card-example">Exemple de données :</p>
+            <pre><code>const user = {
+          name: 'John Doe',
+          age: 30,
+          email: 'john@example.com'
+        };</code></pre>
           </div>
         </section>
         <section class="card">
@@ -1159,6 +1202,26 @@
             <pre><code>.arabic-text {
           direction: rtl;
         }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">dispatch</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le terme "dispatch" fait référence à l'action de transmettre ou
+              d'envoyer des événements ou des actions à des gestionnaires
+              appropriés pour qu'ils soient traités. Cela peut se produire dans
+              le contexte de la programmation, en particulier dans le
+              développement d'applications ou de systèmes basés sur des
+              événements.
+            </p>
+            <p class="card-example">Exemple d'utilisation de dispatch :</p>
+            <pre><code>// Dispatch d'un événement personnalisé
+        const event = new CustomEvent('monEvenement', { detail: { message: 'Hello' } });
+        document.dispatchEvent(event);</code></pre>
           </div>
         </section>
         <section class="card">
@@ -1351,6 +1414,27 @@
             <pre><code>.element {
           float: left;
         }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">fonction</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Une fonction est un bloc de code réutilisable qui effectue une
+              tâche spécifique. Elle permet d'encapsuler une séquence
+              d'instructions et de lui donner un nom, ce qui facilite son appel
+              et sa réutilisation dans un programme. Les fonctions peuvent
+              prendre des paramètres en entrée et renvoyer des valeurs en
+              sortie.
+            </p>
+            <p class="card-example">Exemple de fonction :</p>
+            <pre><code>function greet(name) {
+          console.log('Hello, ' + name + '!');
+        }
+        greet('John');</code></pre>
           </div>
         </section>
         <section class="card">
@@ -2763,6 +2847,44 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">REGEX</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              REGEX (Regular Expression) est un langage formel utilisé pour
+              décrire des modèles de chaînes de caractères. Les expressions
+              régulières permettent de rechercher, de valider et de manipuler
+              des textes en utilisant des règles de correspondance spécifiques.
+              Elles sont largement utilisées dans le traitement des chaînes de
+              caractères, notamment pour la validation des formulaires, la
+              recherche de motifs, le remplacement de texte, etc.
+            </p>
+            <p class="card-example">Exemple d'utilisation des REGEX :</p>
+            <pre><code>const regex = /[A-Za-z]+/;
+        const result = regex.test('Hello');
+        console.log(result); // true</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Requêtes SQL</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les requêtes SQL (Structured Query Language) sont utilisées pour
+              interagir avec les bases de données relationnelles. Elles
+              permettent de récupérer, d'insérer, de mettre à jour ou de
+              supprimer des données dans une base de données en utilisant des
+              commandes spécifiques du langage SQL.
+            </p>
+            <p class="card-example">Exemple de requête SQL :</p>
+            <pre><code>SELECT * FROM users WHERE age &gt; 18;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">right</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -3476,6 +3598,52 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">
+              Unités CSS (%, px, em, rem, vh, vw, etc.)
+            </h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les unités CSS sont utilisées pour définir les dimensions, les
+              positions et d'autres valeurs numériques dans les styles CSS. Les
+              unités les plus couramment utilisées sont :
+            </p>
+            <ul>
+              <li>% : Pourcentage par rapport à la valeur parente.</li>
+              <li>
+                px : Pixels, unité de mesure basée sur les pixels de l'écran.
+              </li>
+              <li>
+                em : Taille relative par rapport à la taille de la police du
+                parent direct.
+              </li>
+              <li>
+                rem : Taille relative par rapport à la taille de la police de la
+                racine du document (html).
+              </li>
+              <li>vh : Pourcentage de la hauteur de la fenêtre d'affichage.</li>
+              <li>vw : Pourcentage de la largeur de la fenêtre d'affichage.</li>
+              <li>
+                etc. : Il existe de nombreuses autres unités CSS disponibles
+                pour des utilisations spécifiques.
+              </li>
+            </ul>
+            <p class="card-example">Exemple d'utilisation d'unités CSS :</p>
+            <pre><code>.container {
+  width: 100%;
+}
+.heading {
+font-size: 2rem;
+}
+
+.paragraph {
+line-height: 1.5em;
+}</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">useContext</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -3633,7 +3801,7 @@
         <h3 class="letter" data-letter="V">V</h3>
         <section class="card">
           <div class="card-header">
-            <h3 class="card-title">var</h3>
+            <h3 class="card-title">var (balise)</h3>
             <button class="card-toggle">Voir</button>
           </div>
           <div class="card-content">
@@ -3645,6 +3813,23 @@
             </p>
             <p class="card-example">Exemple de balise var :</p>
             <pre><code>&lt;var&gt;x&lt;/var&gt;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">variable</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Une variable est un espace de stockage nommé qui permet de
+              conserver une valeur ou une référence à une valeur. Les variables
+              sont utilisées pour stocker des données temporaires ou des
+              résultats de calculs dans un programme. Elles peuvent être
+              modifiées et réutilisées tout au long de l'exécution du programme.
+            </p>
+            <p class="card-example">Exemple de déclaration de variable :</p>
+            <pre><code>let age = 30;</code></pre>
           </div>
         </section>
         <section class="card">
