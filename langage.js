@@ -78,3 +78,16 @@ for (let i = 0; i < 26; i++) {
   });
   alphabetButtonsContainer.appendChild(button);
 }
+
+const scrollButton = document.querySelector(".scroll-top");
+
+scrollButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+window.addEventListener("scroll", () => {
+  scrollButton.style.display = window.scrollY > 50 ? "block" : "none";
+});

@@ -31,6 +31,7 @@
       </form>
       <div id="alphabetButtons"></div>
     </header>
+    <button class="scroll-top">Retour en haut</button>
     <main>
       <section class="category">
         <h2>Vocabulaire</h2>
@@ -1019,6 +1020,26 @@
         p::after {
         content: " Après";
         }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">CORS</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              CORS (Cross-Origin Resource Sharing) est un mécanisme de sécurité
+              utilisé par les navigateurs web pour contrôler les requêtes HTTP
+              effectuées entre différentes origines (domaines, protocoles,
+              ports).
+            </p>
+            <p class="card-example">Exemple d'utilisation de CORS :</p>
+            <pre><code>const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://api.example.com/data', true);
+        xhr.withCredentials = true;
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send();</code></pre>
           </div>
         </section>
         <section class="card">
