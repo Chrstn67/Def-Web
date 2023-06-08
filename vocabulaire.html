@@ -1232,39 +1232,68 @@
           </div>
           <div class="card-content">
             <p class="card-definition">
-              Une cyberattaque est une action malveillante menée par des
-              individus ou des groupes dans le but de compromettre, endommager
-              ou accéder illégalement à des systèmes informatiques, des réseaux
-              ou des données confidentielles. Il existe différents types de
-              cyberattaques, notamment :
+              Une cyberattaque est une action malveillante entreprise par des
+              individus ou des groupes pour compromettre, perturber ou accéder
+              de manière non autorisée à des systèmes informatiques, des réseaux
+              ou des données. Les cyberattaques peuvent prendre différentes
+              formes et viser différents objectifs.
             </p>
-            <ul>
+            <p class="card-example">
+              Voici huit exemples courants de cyberattaques :
+            </p>
+            <ol>
               <li>
-                Attaques par déni de service (DDoS) : inondation d'un système ou
-                d'un réseau avec un trafic excessif pour le rendre indisponible.
+                <strong>Phishing :</strong>
+                Une attaque de phishing consiste à envoyer des messages
+                frauduleux, tels que des e-mails ou des messages instantanés,
+                pour tromper les utilisateurs et les inciter à divulguer des
+                informations confidentielles, telles que des identifiants de
+                connexion ou des numéros de carte de crédit.
               </li>
               <li>
-                Attaques par phishing : utilisation de techniques d'ingénierie
-                sociale pour inciter les utilisateurs à divulguer des
-                informations sensibles, telles que des mots de passe ou des
-                numéros de carte de crédit.
+                <strong>Attaque par déni de service (DDoS) :</strong>
+                Une attaque DDoS vise à submerger un système informatique ou un
+                réseau de trafic illégitime, le rendant indisponible aux
+                utilisateurs légitimes.
               </li>
               <li>
-                Attaques par injection de code : insertion de code malveillant
-                dans les applications ou les sites web afin d'exécuter des
-                actions non autorisées.
+                <strong>Malware :</strong>
+                Les logiciels malveillants (malware) sont des programmes
+                informatiques conçus pour infecter un système et causer des
+                dommages, tels que des virus, des chevaux de Troie, des
+                ransomwares, etc.
               </li>
               <li>
-                Attaques de malware : propagation de logiciels malveillants,
-                tels que des virus, des vers ou des chevaux de Troie, pour
-                infecter des systèmes et voler des données.
+                <strong>Ingénierie sociale :</strong>
+                L'ingénierie sociale est une technique utilisée pour manipuler
+                les individus et les inciter à divulguer des informations
+                sensibles ou à effectuer des actions non sécurisées.
               </li>
               <li>
-                Attaques de force brute : tentative répétée de deviner un mot de
-                passe en essayant différentes combinaisons jusqu'à trouver la
-                bonne.
+                <strong>Attaque de force brute :</strong>
+                Une attaque de force brute consiste à essayer de deviner les
+                identifiants de connexion en testant toutes les combinaisons
+                possibles jusqu'à trouver la bonne.
               </li>
-            </ul>
+              <li>
+                <strong>Ransomware :</strong>
+                Les ransomwares sont des logiciels malveillants qui chiffrent
+                les données d'un système et demandent une rançon en échange de
+                leur déchiffrement.
+              </li>
+              <li>
+                <strong>Attaque par injection SQL :</strong>
+                L'attaque par injection SQL vise à exploiter les failles de
+                sécurité d'une application web pour exécuter des commandes SQL
+                non autorisées et accéder à la base de données sous-jacente.
+              </li>
+              <li>
+                <strong>Attaque de l'homme du milieu (MITM) :</strong>
+                Une attaque de l'homme du milieu consiste à intercepter les
+                communications entre deux parties légitimes afin d'espionner, de
+                modifier ou de bloquer les échanges.
+              </li>
+            </ol>
           </div>
         </section>
         <h3 class="letter" data-letter="D">D</h3>
@@ -3253,6 +3282,61 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Requêtes HTTP</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les requêtes HTTP (Hypertext Transfer Protocol) sont utilisées
+              pour communiquer avec les serveurs web et demander des ressources.
+              Elles permettent d'envoyer des informations au serveur et de
+              recevoir les réponses correspondantes. Les requêtes HTTP sont
+              essentielles pour l'échange d'informations entre un navigateur et
+              un serveur.
+            </p>
+            <p class="card-example">Exemple de requête HTTP :</p>
+            <pre><code>GET /page.html HTTP/1.1
+        Host: www.example.com
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+        Accept-Language: en-US,en;q=0.5
+        Accept-Encoding: gzip, deflate
+        Connection: keep-alive
+        Referer: http://www.example.com/index.html
+        </code></pre>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Requêtes HTTPS</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les requêtes HTTPS (Hypertext Transfer Protocol Secure) sont
+              similaires aux requêtes HTTP, mais elles utilisent une couche de
+              chiffrement SSL/TLS pour sécuriser les échanges de données entre
+              un navigateur et un serveur. Les requêtes HTTPS offrent un niveau
+              supplémentaire de confidentialité et de protection contre les
+              interceptions et les attaques de type "man-in-the-middle". Elles
+              sont couramment utilisées pour les transactions en ligne et les
+              sites web nécessitant une sécurité renforcée.
+            </p>
+            <p class="card-example">Exemple de requête HTTPS :</p>
+            <pre><code>GET /secure-page.html HTTP/1.1
+        Host: www.example.com
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+        Accept-Language: en-US,en;q=0.5
+        Accept-Encoding: gzip, deflate
+        Connection: keep-alive
+        Referer: https://www.example.com/index.html
+        </code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">Requêtes SQL</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -3576,6 +3660,24 @@
             <pre><code>@page {
           size: landscape;
         }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Serveur</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Un serveur fait référence à un ordinateur ou un système qui
+              fournit des services, des ressources ou des fonctionnalités à
+              d'autres ordinateurs ou utilisateurs, appelés clients. Il joue le
+              rôle d'hôte pour les applications, les fichiers et les données,
+              répondant aux demandes des clients et leur fournissant les
+              informations demandées.
+            </p>
+            <p class="card-example">Exemple de serveur :</p>
+            <pre><code>Un serveur web qui héberge un site web et répond aux requêtes HTTP des navigateurs des utilisateurs.</code></pre>
           </div>
         </section>
         <section class="card">
@@ -4360,6 +4462,43 @@ line-height: 1.5em;
             </p>
             <p class="card-example">Exemple de balise wbr :</p>
             <pre><code>&lt;p&gt;Mot long &lt;wbr&gt;à couper&lt;/p&gt;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Websocket</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Websocket est un protocole de communication bidirectionnelle et
+              full-duplex utilisé dans les applications web pour établir une
+              connexion persistante entre un navigateur et un serveur. Il permet
+              des échanges de données en temps réel et une communication
+              instantanée.
+            </p>
+            <p class="card-example">Exemple d'utilisation des Websockets :</p>
+            <pre><code>const socket = new WebSocket('wss://mon-serveur.com/socket');
+        
+        // Événement déclenché lorsqu'une connexion WebSocket est établie
+        socket.onopen = function(event) {
+          console.log('Connexion établie');
+        };
+        
+        // Événement déclenché lorsqu'un message est reçu du serveur
+        socket.onmessage = function(event) {
+          console.log('Message reçu : ' + event.data);
+        };
+        
+        // Événement déclenché lorsqu'une erreur se produit
+        socket.onerror = function(error) {
+          console.error('Erreur WebSocket : ' + error);
+        };
+        
+        // Événement déclenché lorsqu'une connexion WebSocket est fermée
+        socket.onclose = function(event) {
+          console.log('Connexion fermée');
+        };</code></pre>
           </div>
         </section>
         <section class="card">
