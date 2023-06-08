@@ -149,6 +149,23 @@
         &lt;/aside&gt;</code></pre>
           </div>
         </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Attaque XSS</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Une attaque XSS (Cross-Site Scripting) est une vulnérabilité de
+              sécurité courante sur les sites web. Elle se produit lorsque des
+              scripts malveillants sont injectés dans des pages web et exécutés
+              côté client, compromettant ainsi la sécurité des utilisateurs et
+              des données.
+            </p>
+            <p class="card-example">Exemple d'attaque XSS :</p>
+            <pre><code>&lt;script&gt;alert("Vous avez été piraté !");&lt;/script&gt;</code></pre>
+          </div>
+        </section>
 
         <h3 class="letter" data-letter="B">B</h3>
         <section class="card">
@@ -1092,6 +1109,32 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">CRUD</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              CRUD est un acronyme pour Create, Read, Update et Delete, qui sont
+              les quatre opérations de base dans la manipulation des données
+              d'une application. Le CRUD correspond à la création, la lecture,
+              la mise à jour et la suppression de données dans une base de
+              données ou tout autre système de stockage.
+            </p>
+            <p class="card-example">Exemple d'utilisation du CRUD :</p>
+            <pre><code>// Create
+        INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com');
+        // Read
+        SELECT * FROM users;
+        
+        // Update
+        UPDATE users SET name = 'Jane Smith' WHERE id = 1;
+        
+        // Delete
+        DELETE FROM users WHERE id = 1;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">cursor</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -1163,6 +1206,37 @@
             </p>
             <p class="card-example">Exemple de balise del :</p>
             <pre><code>&lt;del&gt;Texte supprimé&lt;/del&gt;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Design pattern</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Un design pattern (patron de conception) est une solution
+              réutilisable à un problème courant de conception de logiciel. Il
+              fournit des directives pour structurer, organiser et résoudre
+              efficacement les problèmes récurrents lors du développement
+              logiciel. Les design patterns favorisent la maintenabilité, la
+              flexibilité et la compréhension du code.
+            </p>
+            <p class="card-example">Exemple de design pattern :</p>
+            <pre><code>// Exemple du design pattern Singleton
+        class Database {
+          private static instance;
+        private constructor() {
+        // Initialisation de la connexion à la base de données
+        }
+        
+        public static getInstance() {
+        if (!this.instance) {
+        this.instance = new Database();
+        }
+        return this.instance;
+        }
+        }</code></pre>
           </div>
         </section>
         <section class="card">
@@ -2280,6 +2354,45 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">MCD</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le MCD (Modèle Conceptuel de Données) est une représentation
+              graphique des concepts et des relations entre les entités d'un
+              système d'information. Il est utilisé dans la modélisation des
+              bases de données pour définir la structure logique des données et
+              leurs interactions.
+            </p>
+            <p class="card-example">Exemple de MCD :</p>
+            <pre><code>Entité : Utilisateur
+        Attributs : ID, Nom, Email</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Mécanisme asynchrone</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Un mécanisme asynchrone est une méthode de traitement dans
+              laquelle les tâches sont exécutées de manière indépendante et non
+              bloquante. Cela permet à un programme ou à une application de
+              continuer à fonctionner sans attendre la fin d'une opération
+              asynchrone, améliorant ainsi l'efficacité et la réactivité.
+            </p>
+            <p class="card-example">
+              Exemple d'utilisation de mécanismes asynchrones :
+            </p>
+            <pre><code>fetch('https://api.example.com/data')
+          .then(response => response.json())
+          .then(data => console.log(data));</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">meta</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -2359,6 +2472,44 @@
             <pre><code>.element {
           min-width: 200px;
         }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">MLD</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le MLD (Modèle Logique de Données) est une représentation
+              intermédiaire entre le modèle conceptuel (MCD) et le modèle
+              physique (MPD). Il décrit les tables, les colonnes, les relations,
+              les clés primaires, les clés étrangères, etc., sans prendre en
+              compte les détails d'implémentation spécifiques à une base de
+              données.
+            </p>
+            <p class="card-example">Exemple de MLD :</p>
+            <pre><code>Table : Utilisateur
+        Colonnes : ID (int), Nom (varchar), Email (varchar)</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">MPD</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le MPD (Modèle Physique de Données) est une représentation
+              détaillée des données dans une base de données, incluant les
+              tables, les colonnes, les contraintes, les clés primaires, les
+              clés étrangères, etc. Il traduit le modèle conceptuel (MCD) en une
+              structure physique prête à être implémentée dans un système de
+              gestion de bases de données.
+            </p>
+            <p class="card-example">Exemple de MPD :</p>
+            <pre><code>Table : Utilisateur
+        Colonnes : ID (int), Nom (varchar), Email (varchar)</code></pre>
           </div>
         </section>
         <h3 class="letter" data-letter="N">N</h3>
@@ -2762,6 +2913,26 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">PDO</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              PDO (PHP Data Objects) est une extension de PHP qui fournit une
+              interface unifiée pour accéder à des bases de données. Elle offre
+              une abstraction de la base de données, permettant aux développeurs
+              de travailler avec différents types de bases de données en
+              utilisant une syntaxe cohérente et sécurisée.
+            </p>
+            <p class="card-example">Exemple d'utilisation de PDO :</p>
+            <pre><code>$pdo = new PDO('mysql:host=localhost;dbname=mydatabase', 'username', 'password');
+        $stmt = $pdo->prepare('SELECT * FROM users');
+        $stmt->execute();
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">position</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -2902,6 +3073,23 @@
             </p>
             <p class="card-example">Exemple de requête SQL :</p>
             <pre><code>SELECT * FROM users WHERE age &gt; 18;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">responsive</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le terme "responsive" fait référence à la conception et au
+              développement de sites web qui s'adaptent de manière dynamique à
+              différents appareils et tailles d'écran. Un site responsive offre
+              une expérience utilisateur optimale, quel que soit le dispositif
+              utilisé pour y accéder.
+            </p>
+            <p class="card-example">Exemple de site web responsive :</p>
+            <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
           </div>
         </section>
         <section class="card">
@@ -3248,6 +3436,29 @@
       </div>
       );
       }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">store</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              En termes de développement web, le terme "store" fait référence à
+              un conteneur de données utilisé pour stocker et gérer l'état d'une
+              application. Il peut s'agir d'un magasin de données centralisé où
+              les informations sont stockées et accessibles à différents
+              composants de l'application.
+            </p>
+            <p class="card-example">Exemple d'utilisation du store :</p>
+            <pre><code>// Création d'un store
+        const store = createStore(reducer);
+        // Récupération de l'état du store
+        const state = store.getState();
+        
+        // Mise à jour de l'état du store
+        store.dispatch({ type: 'INCREMENT' });</code></pre>
           </div>
         </section>
         <section class="card">
@@ -3816,6 +4027,23 @@ line-height: 1.5em;
       </div>
       );
       };</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">user story</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Une user story (histoire utilisateur) est une technique utilisée
+              dans la gestion de projet agile pour décrire les fonctionnalités
+              ou les besoins d'un système du point de vue de l'utilisateur. Elle
+              se présente généralement sous la forme d'une courte description ou
+              d'un scénario simple.
+            </p>
+            <p class="card-example">Exemple d'une user story :</p>
+            <pre><code>En tant qu'utilisateur, je souhaite pouvoir me connecter à mon compte avec mon adresse email et mon mot de passe.</code></pre>
           </div>
         </section>
 
