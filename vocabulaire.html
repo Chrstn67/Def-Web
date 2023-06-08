@@ -90,6 +90,25 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">alt</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              L'attribut "alt" est utilisé dans les balises d'images HTML pour
+              fournir un texte alternatif décrivant l'image. Cet attribut est
+              important pour l'accessibilité, car il permet aux lecteurs d'écran
+              et aux moteurs de recherche de comprendre le contenu de l'image en
+              cas de non-affichage de celle-ci.
+            </p>
+            <p class="card-example">
+              Exemple d'utilisation de l'attribut "alt" :
+            </p>
+            <pre><code>&lt;img src="image.jpg" alt="Description de l'image"&gt;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">API</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -882,7 +901,30 @@
         Respecter les bonnes pratiques de sécurité.</code></pre>
           </div>
         </section>
-
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Captcha</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Un Captcha (Completely Automated Public Turing test to tell
+              Computers and Humans Apart) est un test de sécurité utilisé pour
+              distinguer les humains des robots ou des programmes automatisés
+              sur internet. Il consiste généralement en une tâche que les
+              humains peuvent accomplir facilement, mais qui est difficile pour
+              les machines, comme recopier des caractères déformés, résoudre un
+              puzzle visuel ou répondre à une question simple.
+            </p>
+            <p class="card-example">Exemple d'utilisation d'un Captcha :</p>
+            <pre><code>&lt;form action="traitement.php" method="post"&gt;
+          &lt;label for="captcha"&gt;Recopiez le texte ci-dessous :&lt;/label&gt;
+          &lt;input type="text" id="captcha" name="captcha"&gt;
+          &lt;img src="captcha_image.jpg" alt="Captcha image"&gt;
+          &lt;input type="submit" value="Envoyer"&gt;
+        &lt;/form&gt;</code></pre>
+          </div>
+        </section>
         <section class="card">
           <div class="card-header">
             <h3 class="card-title">caption-side</h3>
@@ -917,6 +959,37 @@
             </p>
             <p class="card-example">Exemple de balise cite :</p>
             <pre><code>&lt;cite&gt;Titre de l'article&lt;/cite&gt;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Clé étrangère</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Une clé étrangère (foreign key) est une colonne ou un groupe de
+              colonnes dans une table de base de données qui fait référence à la
+              clé primaire d'une autre table. Elle établit une relation entre
+              les deux tables en permettant de lier les enregistrements de
+              manière cohérente.
+            </p>
+            <p class="card-example">
+              L'utilisation de clés étrangères permet de mettre en place des
+              relations entre les tables et d'assurer l'intégrité référentielle,
+              c'est-à-dire de garantir que les valeurs de la clé étrangère
+              correspondent aux valeurs de la clé primaire de la table
+              référencée.
+            </p>
+            <p class="card-example">
+              Exemple de définition d'une clé étrangère :
+            </p>
+            <pre><code>CREATE TABLE Orders (
+          OrderID int PRIMARY KEY,
+          CustomerID int,
+          OrderDate date,
+          FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+        );</code></pre>
           </div>
         </section>
         <section class="card">
@@ -1150,6 +1223,48 @@
             <pre><code>.element {
           cursor: pointer;
         }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Cyberattaque</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Une cyberattaque est une action malveillante menée par des
+              individus ou des groupes dans le but de compromettre, endommager
+              ou accéder illégalement à des systèmes informatiques, des réseaux
+              ou des données confidentielles. Il existe différents types de
+              cyberattaques, notamment :
+            </p>
+            <ul>
+              <li>
+                Attaques par déni de service (DDoS) : inondation d'un système ou
+                d'un réseau avec un trafic excessif pour le rendre indisponible.
+              </li>
+              <li>
+                Attaques par phishing : utilisation de techniques d'ingénierie
+                sociale pour inciter les utilisateurs à divulguer des
+                informations sensibles, telles que des mots de passe ou des
+                numéros de carte de crédit.
+              </li>
+              <li>
+                Attaques par injection de code : insertion de code malveillant
+                dans les applications ou les sites web afin d'exécuter des
+                actions non autorisées.
+              </li>
+              <li>
+                Attaques de malware : propagation de logiciels malveillants,
+                tels que des virus, des vers ou des chevaux de Troie, pour
+                infecter des systèmes et voler des données.
+              </li>
+              <li>
+                Attaques de force brute : tentative répétée de deviner un mot de
+                passe en essayant différentes combinaisons jusqu'à trouver la
+                bonne.
+              </li>
+            </ul>
           </div>
         </section>
         <h3 class="letter" data-letter="D">D</h3>
@@ -2512,6 +2627,42 @@
         Colonnes : ID (int), Nom (varchar), Email (varchar)</code></pre>
           </div>
         </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">MVC (Modèle-Vue-Contrôleur)</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              MVC est un modèle d'architecture logicielle largement utilisé dans
+              le développement d'applications web. Il divise une application en
+              trois composants principaux : le Modèle, la Vue et le Contrôleur.
+              Chaque composant a un rôle distinct :
+            </p>
+            <ul>
+              <li>
+                <strong>Modèle :</strong> Représente les données et la logique
+                métier de l'application.
+              </li>
+              <li>
+                <strong>Vue :</strong> Gère l'affichage des données et interagit
+                avec l'utilisateur.
+              </li>
+              <li>
+                <strong>Contrôleur :</strong> Traite les actions de
+                l'utilisateur, met à jour le modèle et contrôle le flux de
+                l'application.
+              </li>
+            </ul>
+            <p class="card-example">Exemple de l'architecture MVC :</p>
+            <pre><code>------------------------        ------------------------        ------------------------
+        |       Modèle        |        |          Vue            |        |   Contrôleur        |
+        |---------------------|        |-------------------------|        |---------------------|
+        |      Données        |        |        Affichage         |        |    Gestion Actions  |
+        |      Logique        |        |     Interaction Utilisateur    |        |    Mise à jour du Modèle   |
+        ------------------------        ------------------------        ------------------------</code></pre>
+          </div>
+        </section>
         <h3 class="letter" data-letter="N">N</h3>
         <section class="card">
           <div class="card-header">
@@ -3060,6 +3211,48 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Relations SQL (0,1 ; 1,1; 0,N; 1,N)</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les relations SQL définissent les liens entre les tables d'une
+              base de données relationnelle. Elles décrivent comment les
+              enregistrements des différentes tables sont associés les uns aux
+              autres.
+            </p>
+            <p class="card-example">Types de relations SQL :</p>
+            <ul>
+              <li>
+                <strong>One-to-One (1,1) :</strong> Une relation où chaque
+                enregistrement d'une table est associé à un seul enregistrement
+                d'une autre table.
+              </li>
+              <li>
+                <strong>One-to-Many (1,N) :</strong> Une relation où chaque
+                enregistrement d'une table est associé à plusieurs
+                enregistrements d'une autre table.
+              </li>
+              <li>
+                <strong>Many-to-Many (N,N) :</strong> Une relation où chaque
+                enregistrement d'une table peut être associé à plusieurs
+                enregistrements d'une autre table, et vice versa.
+              </li>
+              <li>
+                <strong>Zero or One-to-One (0,1) :</strong> Une relation
+                optionnelle où chaque enregistrement d'une table peut être
+                associé à zéro ou un seul enregistrement d'une autre table.
+              </li>
+              <li>
+                <strong>Zero or Many-to-One (0,N) :</strong> Une relation
+                optionnelle où chaque enregistrement d'une table peut être
+                associé à zéro ou plusieurs enregistrements d'une autre table.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">Requêtes SQL</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -3319,6 +3512,36 @@
     .container p {
     color: red;
     }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Sémantique</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              La sémantique, dans le contexte du développement web, se réfère à
+              l'utilisation appropriée des balises et des attributs HTML pour
+              donner un sens et une structure au contenu d'une page web. Une
+              approche sémantique consiste à utiliser les balises HTML de
+              manière cohérente et significative afin d'améliorer
+              l'accessibilité, l'indexation par les moteurs de recherche et la
+              compréhension du contenu par les utilisateurs et les développeurs.
+            </p>
+            <p class="card-example">
+              Exemple d'utilisation de la sémantique HTML :
+            </p>
+            <pre><code>&lt;header&gt;
+          &lt;h1&gt;Titre principal&lt;/h1&gt;
+          &lt;nav&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href="#accueil"&gt;Accueil&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/nav&gt;
+        &lt;/header&gt;</code></pre>
           </div>
         </section>
         <section class="card">
