@@ -67,7 +67,32 @@
             <pre><code>&lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;</code></pre>
           </div>
         </section>
-
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Abstract</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le mot-clé "Abstract" est utilisé en programmation orientée objet
+              pour déclarer une classe ou une méthode abstraite. Une classe
+              abstraite ne peut pas être instanciée directement, mais elle peut
+              servir de classe parente pour d'autres classes qui en héritent.
+              Les méthodes abstraites définissent une signature sans fournir une
+              implémentation, et doivent être implémentées dans les classes
+              dérivées.
+            </p>
+            <p class="card-example">Exemple de classe abstraite :</p>
+            <pre><code>abstract class Shape {
+          abstract public function calculateArea();
+        }
+        class Circle extends Shape {
+        public function calculateArea() {
+        // Logique de calcul de l'aire d'un cercle
+        }
+        }</code></pre>
+          </div>
+        </section>
         <section class="card">
           <div class="card-header">
             <h3 class="card-title">address</h3>
@@ -1091,6 +1116,24 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Composer</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Composer est un gestionnaire de dépendances pour les projets PHP.
+              Il permet de gérer les bibliothèques et les packages tiers
+              nécessaires à un projet, en s'assurant de leur installation, de
+              leur mise à jour et de leur compatibilité. Composer facilite la
+              gestion des dépendances et favorise la réutilisation du code dans
+              les projets PHP.
+            </p>
+            <p class="card-example">Exemple d'utilisation de Composer :</p>
+            <pre><code>composer require monolog/monolog</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">content</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -1109,6 +1152,28 @@
         }
         p::after {
         content: " Après";
+        }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Controller</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le "Controller" dans le modèle de conception MVC est responsable
+              de la gestion des interactions entre le modèle et la vue. Il
+              reçoit les requêtes de l'utilisateur, effectue les opérations
+              nécessaires sur le modèle et prépare les données à afficher dans
+              la vue.
+            </p>
+            <p class="card-example">Exemple de contrôleur :</p>
+            <pre><code>class UserController {
+          public function show($id) {
+            $user = UserRepository::find($id);
+            View::render('user_profile', ['user' => $user]);
+          }
         }</code></pre>
           </div>
         </section>
@@ -1523,6 +1588,54 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Doctrine</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Doctrine est une bibliothèque ORM (Object-Relational Mapping) pour
+              PHP. Elle permet de faciliter la gestion des données en
+              fournissant une couche d'abstraction pour interagir avec la base
+              de données. Doctrine permet de manipuler les données en utilisant
+              des objets métier plutôt que des requêtes SQL directes,
+              simplifiant ainsi le développement et la maintenance des
+              applications.
+            </p>
+            <p class="card-example">Exemple d'utilisation de Doctrine :</p>
+            <pre><code>use Doctrine\ORM\Mapping as ORM;
+        /**
+        
+        @ORM\Entity
+        @ORM\Table(name="users")
+        */
+        class User {
+        // Propriétés et annotations ORM
+        }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Faker</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Faker est une bibliothèque PHP qui permet de générer des données
+              fictives aléatoires. Elle est utile pour générer des jeux de
+              données de test, des données de remplissage pour les bases de
+              données ou pour simuler des données réalistes dans le
+              développement d'applications. Faker fournit une API simple et
+              flexible pour créer une variété de données telles que des noms,
+              des adresses, des numéros de téléphone, des adresses email, etc.
+            </p>
+            <p class="card-example">Exemple d'utilisation de Faker :</p>
+            <pre><code>$faker = \Faker\Factory::create();
+        $name = $faker->name;
+        $email = $faker->email;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">Doctype</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -1574,6 +1687,39 @@
 }</code></pre>
           </div>
         </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Entity</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Une "Entity" est une classe qui représente une entité métier dans
+              un système de gestion de base de données relationnelle (SGBDR).
+              Elle est utilisée pour définir la structure et les relations des
+              tables de la base de données, ainsi que pour effectuer des
+              opérations de manipulation des données.
+            </p>
+            <p class="card-example">Exemple d'entité :</p>
+            <pre><code>/**
+         * @Entity
+         * @Table(name="users")
+         */
+        class User {
+          /**
+           * @Id
+           * @GeneratedValue
+           * @Column(type="integer")
+           */
+          private $id;
+        /**
+        
+        @Column(type="string")
+        */
+        private $name;
+        }</code></pre>
+          </div>
+        </section>
 
         <h3 class="letter" data-letter="F">F</h3>
         <section class="card">
@@ -1612,6 +1758,30 @@
             </p>
             <pre><code>.element {
           filter: grayscale(100%);
+        }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Fixtures</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les "Fixtures" sont des données de test préconfigurées utilisées
+              lors du développement ou du test d'une application. Elles
+              permettent de peupler la base de données avec des données fictives
+              et réalistes afin de simuler des conditions réelles et de vérifier
+              le bon fonctionnement de l'application.
+            </p>
+            <p class="card-example">Exemple de fixtures :</p>
+            <pre><code>class UserFixtures implements FixtureInterface {
+          public function load(ObjectManager $manager) {
+            $user = new User();
+            $user->setName('John Doe');
+            $manager->persist($user);
+            $manager->flush();
+          }
         }</code></pre>
           </div>
         </section>
@@ -2287,6 +2457,44 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Listener / Subscriber</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les "Listeners" et "Subscribers" sont des composants utilisés dans
+              les architectures de type "Observer" pour gérer les événements
+              dans une application. Ils écoutent les événements spécifiques et
+              réagissent en exécutant des actions définies. Les listeners sont
+              souvent utilisés pour gérer des événements spécifiques, tandis que
+              les subscribers permettent de regrouper plusieurs listeners.
+            </p>
+            <p class="card-example">Exemple de listener :</p>
+            <pre><code>class UserListener {
+          public function onUserCreated(UserCreatedEvent $event) {
+            // Actions à exécuter lorsque l'événement "UserCreated" est déclenché
+          }
+        }</code></pre>
+            <p class="card-example">Exemple de subscriber :</p>
+            <pre><code>class UserSubscriber implements EventSubscriberInterface {
+          public static function getSubscribedEvents() {
+            return [
+              UserCreatedEvent::class => 'onUserCreated',
+              UserDeletedEvent::class => 'onUserDeleted',
+            ];
+          }
+        public function onUserCreated(UserCreatedEvent $event) {
+        // Actions à exécuter lorsque l'événement "UserCreated" est déclenché
+        }
+        
+        public function onUserDeleted(UserDeletedEvent $event) {
+        // Actions à exécuter lorsque l'événement "UserDeleted" est déclenché
+        }
+        }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">list-style-image</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -2354,6 +2562,38 @@
             <p class="card-example">Exemple d'utilisation de list-style :</p>
             <pre><code>ul {
           list-style: square inside url('marker.png');
+        }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">loader</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Un "loader" est un élément visuel utilisé pour indiquer à
+              l'utilisateur que le contenu de la page est en cours de
+              chargement. Il est souvent représenté sous forme d'une animation
+              ou d'une icône tournante. Les loaders sont couramment utilisés
+              lorsqu'une application web effectue des requêtes asynchrones ou
+              traite de grandes quantités de données afin de fournir une
+              indication visuelle de l'activité en cours.
+            </p>
+            <p class="card-example">Exemple d'utilisation d'un "loader" :</p>
+            <pre><code>&lt;div class="loader"&gt;&lt;/div&gt;
+        .loader {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #3498db;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+        }
+        
+        @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
         }</code></pre>
           </div>
         </section>
@@ -2694,6 +2934,35 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Model</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              En développement logiciel, le terme "Model" fait référence à la
+              partie du modèle de conception MVC (Modèle-Vue-Contrôleur) qui
+              représente les données et la logique métier d'une application. Le
+              modèle est responsable de la manipulation, de la validation et de
+              la persistance des données.
+            </p>
+            <p class="card-example">Exemple de modèle :</p>
+            <pre><code>class User {
+          // Propriétés du modèle
+          private $id;
+          private $name;
+        // Méthodes du modèle
+        public function getName() {
+        return $this->name;
+        }
+        
+        public function setName($name) {
+        $this->name = $name;
+        }
+        }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">MPD</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -2818,6 +3087,39 @@
             <pre><code>.element {
           opacity: 0.5;
         }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">ORM</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              ORM (Object-Relational Mapping) est une technique de programmation
+              qui permet de faire le lien entre les objets d'une application et
+              les tables d'une base de données relationnelle. Il facilite
+              l'accès et la manipulation des données en fournissant une
+              interface orientée objet pour interagir avec la base de données.
+            </p>
+            <p class="card-example">Exemple d'utilisation de l'ORM :</p>
+            <pre><code>const user = new User();
+        user.firstName = "John";
+        user.lastName = "Doe";
+        user.email = "john.doe@example.com";
+        
+        // Enregistrer l'utilisateur dans la base de données
+        user.save();
+        
+        // Récupérer tous les utilisateurs
+        const users = User.findAll();
+        
+        // Modifier un utilisateur
+        user.lastName = "Smith";
+        user.save();
+        
+        // Supprimer un utilisateur
+        user.delete();</code></pre>
           </div>
         </section>
         <section class="card">
@@ -3148,6 +3450,37 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">payload</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le terme "payload" fait référence aux données transportées dans un
+              message ou une requête. Dans le contexte du développement web, le
+              payload est généralement utilisé pour désigner les données
+              envoyées avec une requête HTTP, telles que les données d'un
+              formulaire ou les données à traiter par un service ou une API.
+            </p>
+            <p class="card-example">
+              Exemple d'utilisation du terme "payload" :
+            </p>
+            <pre><code>const payload = {
+          username: 'john_doe',
+          email: 'john@example.com',
+          age: 25
+        };
+        fetch('/api/users', {
+        method: 'POST',
+        body: JSON.stringify(payload)
+        })
+        .then(response => response.json())
+        .then(data => {
+        console.log(data);
+        });</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">PDO</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -3441,6 +3774,50 @@
             <pre><code>.example {
           position: absolute;
           right: 20px;
+        }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Routes</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les "Routes" sont utilisées dans les frameworks web pour définir
+              les URL et les actions correspondantes dans une application. Elles
+              permettent de mapper les requêtes HTTP reçues aux différentes
+              actions du contrôleur qui doivent être exécutées. Les routes
+              déterminent comment les URL sont structurées et quelles actions
+              sont associées à chaque URL.
+            </p>
+            <p class="card-example">Exemple de route :</p>
+            <pre><code>Route::get('/users/{id}', 'UserController@show');</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Repository</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Un "Repository" est un composant qui agit comme une couche
+              d'abstraction entre l'application et la source de données
+              (généralement une base de données). Il est responsable de la
+              récupération, de la persistance et de la manipulation des objets
+              métier. Les repositories fournissent une interface pour effectuer
+              des opérations CRUD (Create, Read, Update, Delete) sur les entités
+              de l'application.
+            </p>
+            <p class="card-example">Exemple de repository :</p>
+            <pre><code>class UserRepository {
+          public function findById($id) {
+            // Logique pour récupérer un utilisateur par son ID depuis la base de données
+          }
+        public function save(User $user) {
+        // Logique pour sauvegarder un utilisateur dans la base de données
+        }
         }</code></pre>
           </div>
         </section>
@@ -4505,6 +4882,31 @@ line-height: 1.5em;
             <pre><code>.example {
           vertical-align: middle;
         }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">View</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Dans le modèle de conception MVC, la "View" représente la partie
+              de l'application chargée de l'affichage des données et de
+              l'interaction avec l'utilisateur. La vue reçoit les données du
+              modèle et les présente sous forme de pages web, d'interfaces
+              graphiques ou d'autres formats visuels.
+            </p>
+            <p class="card-example">Exemple de vue :</p>
+            <pre><code>&lt;html&gt;
+          &lt;head&gt;
+            &lt;title&gt;Mon application&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;Bienvenue&lt;/h1&gt;
+            &lt;p&gt;Bonjour, &lt;?php echo $user->getName(); ?&gt;!&lt;/p&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;</code></pre>
           </div>
         </section>
         <section class="card">
