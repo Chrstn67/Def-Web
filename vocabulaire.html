@@ -95,6 +95,53 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Accessibilité</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              L'accessibilité en matière de conception web fait référence à la
+              pratique de créer des sites web et des applications accessibles à
+              tous les utilisateurs, y compris ceux ayant des handicaps ou des
+              limitations physiques, cognitives ou sensorielles. L'objectif est
+              de permettre à tous les utilisateurs de percevoir, comprendre,
+              naviguer et interagir avec le contenu de manière efficace.
+            </p>
+            <p class="card-example">Mise en place de l'accessibilité :</p>
+            <ul>
+              <li>
+                Utiliser des balises HTML appropriées et sémantiques pour
+                structurer le contenu de manière logique.
+              </li>
+              <li>
+                Utiliser des attributs alt pour décrire les images de manière
+                textuelle pour les utilisateurs ayant une déficience visuelle.
+              </li>
+              <li>
+                Utiliser des couleurs contrastées pour faciliter la lisibilité
+                du texte.
+              </li>
+              <li>
+                Fournir des alternatives textuelles pour les contenus non
+                textuels tels que les vidéos ou les fichiers audio.
+              </li>
+              <li>
+                Utiliser des formulaires accessibles avec des étiquettes et des
+                indications claires.
+              </li>
+              <li>
+                Permettre la navigation au clavier et fournir des indications
+                visuelles pour les éléments interactifs.
+              </li>
+              <li>
+                Tester et valider l'accessibilité de votre site web à l'aide
+                d'outils et de vérificateurs d'accessibilité.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">address</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -210,7 +257,81 @@
             <pre><code>&lt;script&gt;alert("Vous avez été piraté !");&lt;/script&gt;</code></pre>
           </div>
         </section>
-
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Attribut</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Un attribut est une valeur spécifique ajoutée à une balise HTML
+              pour lui donner des propriétés supplémentaires ou des informations
+              spécifiques.
+            </p>
+            <p class="card-example">
+              Exemples d'attributs couramment utilisés :
+            </p>
+            <ul>
+              <li>
+                <strong>class</strong> : L'attribut "class" est utilisé pour
+                spécifier une ou plusieurs classes CSS qui sont appliquées à un
+                élément.
+              </li>
+              <li>
+                <strong>id</strong> : L'attribut "id" est utilisé pour donner un
+                identifiant unique à un élément.
+              </li>
+              <li>
+                <strong>src</strong> : L'attribut "src" est utilisé pour
+                spécifier l'URL de la source (comme une image ou une vidéo) à
+                afficher dans un élément.
+              </li>
+              <li>
+                <strong>href</strong> : L'attribut "href" est utilisé pour
+                spécifier l'URL de destination d'un lien hypertexte.
+              </li>
+              <li>
+                <strong>alt</strong> : L'attribut "alt" est utilisé pour
+                spécifier un texte alternatif à afficher lorsque l'élément
+                (comme une image) ne peut pas être affiché.
+              </li>
+              <li>
+                <strong>style</strong> : L'attribut "style" est utilisé pour
+                spécifier des règles CSS pour un élément spécifique.
+              </li>
+              <li>
+                <strong>disabled</strong> : L'attribut "disabled" est utilisé
+                pour désactiver un élément interactif, comme un champ de saisie
+                ou un bouton.
+              </li>
+              <li>
+                <strong>required</strong> : L'attribut "required" est utilisé
+                pour indiquer que la saisie d'un champ est obligatoire.
+              </li>
+              <li>
+                <strong>value</strong> : L'attribut "value" est utilisé pour
+                spécifier la valeur par défaut d'un champ de saisie ou d'un
+                élément de formulaire.
+              </li>
+              <li>
+                <strong>data-*</strong> : Les attributs "data-*" sont utilisés
+                pour stocker des données personnalisées pour un élément, où *
+                représente le nom spécifique de l'attribut.
+              </li>
+              <li>
+                <strong>rel</strong> : L'attribut "rel" est utilisé pour
+                spécifier la relation entre la page courante et la page liée,
+                généralement utilisé dans les balises
+                <code>&lt;a&gt;</code> pour les liens.
+              </li>
+              <li>
+                <strong>target</strong> : L'attribut "target" est utilisé pour
+                spécifier où ouvrir la page liée, généralement utilisé avec
+                l'attribut "href" dans les balises <code>&lt;a&gt;</code>.
+              </li>
+            </ul>
+          </div>
+        </section>
         <h3 class="letter" data-letter="B">B</h3>
         <section class="card">
           <div class="card-header">
@@ -1720,7 +1841,34 @@
         }</code></pre>
           </div>
         </section>
-
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">extract</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              La fonction extract est une fonction PHP qui est utilisée pour
+              importer les variables d'un tableau associatif dans la table des
+              symboles actuelle, ce qui permet d'accéder directement aux valeurs
+              du tableau sans utiliser leurs clés.
+            </p>
+            <p class="card-example">
+              Exemple d'utilisation de la fonction extract :
+            </p>
+            <pre><code>$personne = array(
+          'nom' => 'Dupont',
+          'age' => 25,
+          'ville' => 'Paris'
+        );
+        
+        extract($personne);
+        
+        echo $nom; // Affiche 'Dupont'
+        echo $age; // Affiche 25
+        echo $ville; // Affiche 'Paris'</code></pre>
+          </div>
+        </section>
         <h3 class="letter" data-letter="F">F</h3>
         <section class="card">
           <div class="card-header">
@@ -2308,6 +2456,34 @@
             </p>
             <p class="card-example">Exemple de balise ins :</p>
             <pre><code>&lt;ins&gt;Texte inséré&lt;/ins&gt;</code></pre>
+          </div>
+        </section>
+        <h3 class="letter" data-letter="J">J</h3>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Jointure SQL</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              La jointure SQL est une opération permettant de combiner les
+              enregistrements de deux ou plusieurs tables en utilisant une
+              relation commune entre elles. Elle est utilisée pour obtenir des
+              résultats combinés et plus complets à partir de différentes
+              sources de données.
+            </p>
+            <p class="card-example">Exemples de jointures SQL :</p>
+            <pre><code>SELECT * FROM table1
+        JOIN table2 ON table1.column = table2.column;
+        
+        SELECT * FROM customers
+        INNER JOIN orders ON customers.customer_id = orders.customer_id;
+        
+        SELECT * FROM employees
+        LEFT JOIN departments ON employees.department_id = departments.department_id;
+        
+        SELECT * FROM products
+        RIGHT JOIN categories ON products.category_id = categories.category_id;</code></pre>
           </div>
         </section>
         <h3 class="letter" data-letter="K">K</h3>
