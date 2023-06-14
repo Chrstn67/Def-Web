@@ -2383,6 +2383,48 @@ element.classList.add("highlight");</code></pre>
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Héritage (en POO)</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              En programmation orientée objet (POO), l'héritage est un mécanisme
+              qui permet à une classe d'hériter les propriétés et les
+              comportements d'une autre classe appelée classe parente ou classe
+              de base. La classe qui hérite est appelée classe enfant ou classe
+              dérivée. L'héritage permet de créer une relation hiérarchique
+              entre les classes, où les classes enfant peuvent accéder et
+              étendre les fonctionnalités de la classe parente.
+            </p>
+            <p class="card-example">Exemple d'héritage en POO :</p>
+            <pre><code>class Animal {
+          constructor(name) {
+            this.name = name;
+          }
+        
+          eat() {
+            console.log(this.name + ' mange.');
+          }
+        }
+        
+        class Cat extends Animal {
+          constructor(name, breed) {
+            super(name);
+            this.breed = breed;
+          }
+        
+          meow() {
+            console.log(this.name + ' miaule.');
+          }
+        }
+        
+        const myCat = new Cat('Misty', 'Persan');
+        myCat.eat(); // Affiche "Misty mange."
+        myCat.meow(); // Affiche "Misty miaule."</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">Hook</h3>
             <button class="card-toggle">Voir</button>
           </div>
