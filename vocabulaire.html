@@ -1275,6 +1275,37 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Constructeur</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              En programmation orientée objet, un constructeur est une méthode
+              spéciale utilisée pour initialiser un objet lors de sa création.
+              Il définit les propriétés et les comportements initiaux de
+              l'objet. Le constructeur est appelé automatiquement lorsqu'un
+              nouvel objet est créé (instencié) à partir d'une classe.
+            </p>
+            <p class="card-example">
+              Exemple d'utilisation d'un constructeur :
+            </p>
+            <pre><code>class Person {
+          constructor(name, age) {
+            this.name = name;
+            this.age = age;
+          }
+        
+          greet() {
+            console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
+          }
+        }
+        
+        const person1 = new Person("John", 30);
+        person1.greet(); // Output: Hello, my name is John and I'm 30 years old.</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">content</h3>
             <button class="card-toggle">Voir</button>
           </div>
