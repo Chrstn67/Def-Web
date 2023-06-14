@@ -2511,6 +2511,23 @@ element.classList.add("highlight");</code></pre>
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Injection SQL</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              L'injection SQL est une technique d'attaque utilisée pour
+              exploiter les vulnérabilités des applications web qui
+              interagissent avec une base de données. Elle consiste à insérer du
+              code SQL malveillant dans une requête afin de compromettre la
+              sécurité de la base de données.
+            </p>
+            <p class="card-example">Exemple d'injection SQL :</p>
+            <pre><code>SELECT * FROM users WHERE username = 'admin' OR '1'='1';</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">ins</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -3332,6 +3349,24 @@ element.classList.add("highlight");</code></pre>
           </div>
         </section>
         <h3 class="letter" data-letter="O">O</h3>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">ODM (Object-Document Mapping)</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              ODM (Object-Document Mapping) est une technique de programmation
+              utilisée dans les applications qui utilisent une base de données
+              NoSQL (comme MongoDB). Elle permet de faire correspondre les
+              objets du code source avec les documents de la base de données,
+              facilitant ainsi leur manipulation et leur persistance.
+            </p>
+            <p class="card-example">Exemple d'ODM avec MongoDB :</p>
+            <pre><code>const user = new User({ name: 'John', age: 25 });
+        user.save();</code></pre>
+          </div>
+        </section>
         <section class="card">
           <div class="card-header">
             <h3 class="card-title">ol, ul, li</h3>
