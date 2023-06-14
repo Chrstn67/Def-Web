@@ -98,6 +98,45 @@
         <h3 class="letter" data-letter="C">C</h3>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Chemin Absolu vs Chemin Relatif</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              En développement web, les termes "Chemin Absolu" et "Chemin
+              Relatif" font référence à des méthodes différentes pour spécifier
+              l'emplacement d'un fichier ou d'une ressource.
+            </p>
+            <p class="card-definition">
+              Un chemin absolu est un chemin complet qui spécifie l'emplacement
+              d'un fichier ou d'une ressource à partir de la racine du système
+              de fichiers. Il inclut généralement le nom du disque (sur les
+              systèmes d'exploitation tels que Windows) suivi de tous les
+              dossiers parents jusqu'au fichier ou à la ressource spécifiée.
+            </p>
+            <p class="card-definition">
+              Un chemin relatif, quant à lui, est un chemin qui spécifie
+              l'emplacement d'un fichier ou d'une ressource par rapport à la
+              position actuelle du fichier ou de la ressource qui fait référence
+              à lui. Il ne contient pas le chemin complet depuis la racine du
+              système de fichiers.
+            </p>
+            <p class="card-example">Exemple :</p>
+            <pre><code>Supposons que nous ayons l'arborescence de fichiers suivante :
+            - /racine
+              - fichier.html
+              - dossier
+                - image.jpg
+          
+          Chemin absolu du fichier "image.jpg" depuis la racine du système de fichiers :
+            /racine/dossier/image.jpg
+          
+          Chemin relatif du fichier "image.jpg" depuis le fichier "fichier.html" :
+            dossier/image.jpg</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">Clés primaires vs Clés étrangères</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -245,6 +284,49 @@
             <p class="card-example">Exemple :</p>
             <pre><code>Front-end: Interface utilisateur, mise en page, animations, interactions utilisateur (HTML, CSS, JavaScript)
           Back-end: Gestion des données, traitement des requêtes, sécurité, gestion des utilisateurs (PHP, Java, Python)</code></pre>
+          </div>
+        </section>
+        <h3 class="letter" data-letter="G">G</h3>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">GET vs POST</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              GET et POST sont deux méthodes de requête utilisées dans les
+              protocoles HTTP (Hypertext Transfer Protocol) pour communiquer
+              avec un serveur web.
+            </p>
+            <p class="card-definition">
+              Voici les différences entre GET et POST :
+            </p>
+            <ul>
+              <li>
+                GET : Cette méthode de requête est utilisée pour récupérer des
+                données à partir d'un serveur. Les données sont transmises en
+                tant que paramètres dans l'URL de la requête. Les requêtes GET
+                sont généralement utilisées pour les opérations de lecture et
+                n'ont pas d'effets secondaires sur le serveur.
+              </li>
+              <li>
+                POST : Cette méthode de requête est utilisée pour envoyer des
+                données au serveur dans le corps de la requête. Les données ne
+                sont pas visibles dans l'URL. Les requêtes POST sont utilisées
+                pour les opérations qui modifient l'état du serveur, telles que
+                la création, la mise à jour ou la suppression de ressources.
+              </li>
+            </ul>
+            <p class="card-example">Exemple d'utilisation de GET :</p>
+            <pre><code>GET /api/users?id=123</code></pre>
+            <p class="card-example">Exemple d'utilisation de POST :</p>
+            <pre><code>POST /api/users
+          Content-Type: application/json
+          
+          {
+            "name": "John Doe",
+            "email": "johndoe@example.com"
+          }</code></pre>
           </div>
         </section>
         <h3 class="letter" data-letter="I">I</h3>
