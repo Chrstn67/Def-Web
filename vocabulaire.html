@@ -23,6 +23,9 @@
         <a href="vocabulaire.html">
           <button class="menu">Def' Vocabulaire</button>
         </a>
+        <a href="vs.html">
+          <button class="menu">Def' VS</button>
+        </a>
       </section>
       <form>
         <input name="searchVocab" id="searchVocab" placeholder="Rechercher" />
@@ -65,6 +68,29 @@
             </p>
             <p class="card-example">Exemple de balise &lt;abbr&gt; :</p>
             <pre><code>&lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">absolu</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le positionnement absolu est une méthode de placement d'un élément
+              sur la page web par rapport à son premier parent positionné
+              (c'est-à-dire ayant une position différente de la valeur par
+              défaut "static"). L'élément positionné de manière absolue est
+              déplacé en utilisant les propriétés "top", "right", "bottom" et
+              "left". Il est hors du flux normal du document et peut se
+              superposer à d'autres éléments.
+            </p>
+            <p class="card-example">
+              Exemple d'utilisation de positionnement absolu :
+            </p>
+            <pre><code>&lt;div style="position: absolute; top: 10px; left: 20px;"&gt;
+          Contenu positionné de manière absolue
+        &lt;/div&gt;</code></pre>
           </div>
         </section>
         <section class="card">
@@ -162,6 +188,23 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Affectation</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              L'affectation est l'action d'attribuer une valeur à une variable.
+              Elle permet de stocker une donnée dans une variable pour une
+              utilisation ultérieure. L'opérateur d'affectation le plus
+              couramment utilisé est le signe égal (=), qui attribue la valeur à
+              droite de l'opérateur à la variable à gauche.
+            </p>
+            <p class="card-example">Exemple d'affectation :</p>
+            <pre><code>var x = 10; // La valeur 10 est attribuée à la variable x</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">alt</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -198,6 +241,47 @@
           .then(data => {
             // Traitement des données reçues
           });</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Architecture</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              L'architecture fait référence à la structure globale et à
+              l'organisation d'un système ou d'une application informatique.
+              Elle définit la manière dont les différents composants d'un
+              système interagissent entre eux, comment les données sont
+              traitées, et comment les différentes fonctionnalités sont
+              réparties et gérées.
+            </p>
+            <p class="card-example">Exemple d'architecture :</p>
+            <pre><code>L'architecture d'une application web peut être basée sur le modèle client-serveur, où le client (généralement un navigateur web) envoie des requêtes au serveur, qui traite ces requêtes et renvoie les réponses correspondantes. Cela peut impliquer l'utilisation de technologies telles que HTML, CSS et JavaScript pour la partie front-end, et des langages tels que PHP, Java ou .NET pour la partie back-end.</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Arguments</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les arguments sont les valeurs effectivement passées à une
+              fonction ou à une méthode lors de son appel. Ils correspondent aux
+              paramètres définis dans la signature de la fonction. Les arguments
+              peuvent varier en nombre et en type, en fonction des paramètres de
+              la fonction.
+            </p>
+            <p class="card-example">
+              Exemple d'appel de fonction avec des arguments en JavaScript :
+            </p>
+            <pre><code>function greet(name) {
+          console.log("Bonjour, " + name + " !");
+        }
+        greet("Alice"); // Affiche "Bonjour, Alice !"
+        greet("Bob"); // Affiche "Bonjour, Bob !"</code></pre>
           </div>
         </section>
         <section class="card">
@@ -466,6 +550,23 @@
             <pre><code>.element {
           background-position: center top;
         }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">BackOffice</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le BackOffice, également appelé interface d'administration, est la
+              partie d'une application web réservée aux administrateurs ou aux
+              utilisateurs autorisés. Il permet de gérer et de configurer les
+              fonctionnalités de l'application, de gérer les utilisateurs,
+              d'accéder aux données de la base de données, etc.
+            </p>
+            <p class="card-example">Exemple d'utilisation du BackOffice :</p>
+            <pre><code>Modifier les paramètres du site, gérer les utilisateurs et les autorisations, consulter les statistiques</code></pre>
           </div>
         </section>
         <section class="card">
@@ -1049,6 +1150,26 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">CallBack</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Un callback, ou fonction de rappel, est une fonction qui est
+              passée comme argument à une autre fonction. Elle permet d'indiquer
+              à cette fonction quoi faire une fois qu'une opération asynchrone
+              est terminée ou lorsqu'un événement se produit. Le callback est
+              appelé ultérieurement pour traiter les résultats ou les
+              événements.
+            </p>
+            <p class="card-example">Exemple d'utilisation d'un callback :</p>
+            <pre><code>setTimeout(function() {
+          console.log("Le délai est écoulé !");
+        }, 3000);</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">Captcha</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -1105,6 +1226,34 @@
             </p>
             <p class="card-example">Exemple de balise cite :</p>
             <pre><code>&lt;cite&gt;Titre de l'article&lt;/cite&gt;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Classe</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              En programmation orientée objet, une classe est un modèle ou un
+              plan pour créer des objets. Elle définit les propriétés et les
+              comportements communs à un groupe d'objets. Une classe sert de
+              structure pour créer des instances individuelles appelées objets,
+              qui peuvent avoir leurs propres valeurs de propriétés uniques mais
+              partagent les mêmes méthodes et fonctionnalités définies dans la
+              classe.
+            </p>
+            <p class="card-example">Exemple de classe en Java :</p>
+            <pre><code>public class Circle {
+          private double radius;
+        public Circle(double radius) {
+        this.radius = radius;
+        }
+        
+        public double getArea() {
+        return Math.PI * radius * radius;
+        }
+        }</code></pre>
           </div>
         </section>
         <section class="card">
@@ -1189,6 +1338,23 @@
           position: absolute;
           clip: rect(0px, 100px, 100px, 0px);
         }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">CMS</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              CMS (Content Management System) est un système de gestion de
+              contenu qui permet de créer, de modifier et de publier facilement
+              du contenu sur le web. Il offre une interface conviviale pour
+              gérer les pages, les articles, les médias et d'autres éléments du
+              site web sans avoir à écrire de code.
+            </p>
+            <p class="card-example">Exemple de CMS :</p>
+            <pre><code>WordPress, Joomla, Drupal, Magento</code></pre>
           </div>
         </section>
         <section class="card">
@@ -1617,6 +1783,23 @@ console.log(nom); // Affiche "John Doe"</code></pre>
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Dépendance</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              En développement logiciel, une dépendance est une relation entre
+              deux éléments, où un élément dépend de l'autre pour fonctionner
+              correctement. Dans le contexte des langages de programmation, une
+              dépendance peut se référer à une bibliothèque, un module, ou une
+              autre ressource externe utilisée dans un projet.
+            </p>
+            <p class="card-example">Exemple de dépendance :</p>
+            <pre><code>Utilisation d'une bibliothèque externe dans un projet, importation d'un module</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">Design pattern</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -1833,27 +2016,7 @@ element.innerHTML = "Nouveau contenu";
 element.classList.add("highlight");</code></pre>
           </div>
         </section>
-        <section class="card">
-          <div class="card-header">
-            <h3 class="card-title">Faker</h3>
-            <button class="card-toggle">Voir</button>
-          </div>
-          <div class="card-content">
-            <p class="card-definition">
-              Faker est une bibliothèque PHP qui permet de générer des données
-              fictives aléatoires. Elle est utile pour générer des jeux de
-              données de test, des données de remplissage pour les bases de
-              données ou pour simuler des données réalistes dans le
-              développement d'applications. Faker fournit une API simple et
-              flexible pour créer une variété de données telles que des noms,
-              des adresses, des numéros de téléphone, des adresses email, etc.
-            </p>
-            <p class="card-example">Exemple d'utilisation de Faker :</p>
-            <pre><code>$faker = \Faker\Factory::create();
-        $name = $faker->name;
-        $email = $faker->email;</code></pre>
-          </div>
-        </section>
+
         <section class="card">
           <div class="card-header">
             <h3 class="card-title">Doctype</h3>
@@ -1942,6 +2105,29 @@ element.classList.add("highlight");</code></pre>
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Événement</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              En programmation, un événement est un signal ou une notification
+              générée par le système ou par l'utilisateur pour indiquer qu'une
+              action ou un changement s'est produit. Les événements peuvent être
+              associés à des éléments de l'interface utilisateur, tels que des
+              clics de souris, des pressions de touches, des chargements de
+              page, etc., et peuvent déclencher l'exécution de code spécifique,
+              appelé gestionnaire d'événements.
+            </p>
+            <p class="card-example">
+              Exemple de gestionnaire d'événement en JavaScript :
+            </p>
+            <pre><code>document.getElementById("myButton").addEventListener("click", function() {
+          console.log("Le bouton a été cliqué.");
+        });</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">extract</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -1969,6 +2155,27 @@ element.classList.add("highlight");</code></pre>
           </div>
         </section>
         <h3 class="letter" data-letter="F">F</h3>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Faker</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Faker est une bibliothèque PHP qui permet de générer des données
+              fictives aléatoires. Elle est utile pour générer des jeux de
+              données de test, des données de remplissage pour les bases de
+              données ou pour simuler des données réalistes dans le
+              développement d'applications. Faker fournit une API simple et
+              flexible pour créer une variété de données telles que des noms,
+              des adresses, des numéros de téléphone, des adresses email, etc.
+            </p>
+            <p class="card-example">Exemple d'utilisation de Faker :</p>
+            <pre><code>$faker = \Faker\Factory::create();
+        $name = $faker->name;
+        $email = $faker->email;</code></pre>
+          </div>
+        </section>
         <section class="card">
           <div class="card-header">
             <h3 class="card-title">figure, figcaption</h3>
@@ -2311,6 +2518,26 @@ element.classList.add("highlight");</code></pre>
         <h3 class="letter" data-letter="G">G</h3>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Gestion de version</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              La gestion de version, également appelée contrôle de version, est
+              le processus de suivi et de gestion des modifications apportées à
+              un ensemble de fichiers au fil du temps. Elle permet de conserver
+              un historique des modifications, de faciliter la collaboration
+              entre les développeurs et de revenir à des versions antérieures si
+              nécessaire.
+            </p>
+            <p class="card-example">
+              Exemple de système de gestion de version :
+            </p>
+            <pre><code>Git, SVN (Subversion), Mercurial, CVS</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">Grid</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -2356,6 +2583,27 @@ element.classList.add("highlight");</code></pre>
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">handler</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Un handler, ou gestionnaire, est une fonction ou un morceau de
+              code responsable de la gestion d'événements ou d'erreurs
+              spécifiques. Il est généralement attaché à un événement ou à une
+              condition et est invoqué lorsque cet événement se produit ou que
+              cette condition est rencontrée. Les handlers sont utilisés pour
+              traiter des actions spécifiques en réponse à des événements ou des
+              erreurs.
+            </p>
+            <p class="card-example">Exemple d'utilisation d'un handler :</p>
+            <pre><code>document.addEventListener("click", function(event) {
+          console.log("Clic détecté !");
+        });</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">head</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -2395,6 +2643,24 @@ element.classList.add("highlight");</code></pre>
             &lt;a href="#"&gt;Contact&lt;/a&gt;
           &lt;/nav&gt;
         &lt;/header&gt;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Headers</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les headers, ou en-têtes, font partie des informations transmises
+              dans une requête HTTP ou une réponse HTTP. Ils contiennent des
+              métadonnées sur la requête ou la réponse, telles que le type de
+              contenu, les cookies, les informations de l'utilisateur, etc. Les
+              headers sont utilisés pour communiquer des informations
+              supplémentaires entre le client et le serveur.
+            </p>
+            <p class="card-example">Exemple d'en-tête HTTP (Accept) :</p>
+            <pre><code>Accept: text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8</code></pre>
           </div>
         </section>
         <section class="card">
@@ -2545,6 +2811,24 @@ element.classList.add("highlight");</code></pre>
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">IDE</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              IDE (Integrated Development Environment) est un environnement de
+              développement intégré qui regroupe des outils et fonctionnalités
+              pour faciliter le développement de logiciels. Il comprend
+              généralement un éditeur de code, un débogueur, un compilateur, un
+              gestionnaire de projets et d'autres fonctionnalités de
+              productivité pour les développeurs.
+            </p>
+            <p class="card-example">Exemple d'IDE :</p>
+            <pre><code>Visual Studio Code, Eclipse, IntelliJ IDEA, Xcode</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">
               img, picture, source, video, audio, track, iframe, object, param,
               embed, map, area, svg, math
@@ -2616,6 +2900,46 @@ element.classList.add("highlight");</code></pre>
             <pre><code>&lt;ins&gt;Texte inséré&lt;/ins&gt;</code></pre>
           </div>
         </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Itération</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              L'itération, également appelée boucle, est un processus de
+              répétition d'un bloc de code plusieurs fois. Elle permet
+              d'exécuter une série d'instructions de manière répétée jusqu'à ce
+              qu'une condition spécifiée soit remplie. Les boucles sont
+              utilisées pour automatiser des tâches répétitives et pour traiter
+              des collections de données.
+            </p>
+            <p class="card-example">Exemple de boucle for :</p>
+            <pre><code>for (var i = 0; i < 5; i++) {
+          console.log(i);
+        }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Interface</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Une interface, en programmation, fait référence à un ensemble de
+              méthodes et de propriétés qui définissent les actions et les
+              comportements d'un objet ou d'une classe. Elle permet de définir
+              un contrat que les classes doivent respecter en implémentant les
+              méthodes et les propriétés spécifiées par l'interface.
+            </p>
+            <p class="card-example">Exemple d'interface en Java :</p>
+            <pre><code>public interface Drawable {
+          void draw();
+          void resize(int width, int height);
+        }</code></pre>
+          </div>
+        </section>
         <h3 class="letter" data-letter="J">J</h3>
         <section class="card">
           <div class="card-header">
@@ -2642,6 +2966,27 @@ element.classList.add("highlight");</code></pre>
         
         SELECT * FROM products
         RIGHT JOIN categories ON products.category_id = categories.category_id;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">JSON</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              JSON (JavaScript Object Notation) est un format de données léger
+              et facile à lire et à écrire. Il est largement utilisé pour
+              échanger des données entre un serveur et un client web, ainsi que
+              pour le stockage et le transfert de données. JSON est basé sur la
+              notation d'objet JavaScript et est indépendant du langage.
+            </p>
+            <p class="card-example">Exemple de structure JSON :</p>
+            <pre><code>{
+          "nom": "John Doe",
+          "age": 30,
+          "ville": "Paris"
+        }</code></pre>
           </div>
         </section>
         <h3 class="letter" data-letter="K">K</h3>
@@ -3184,6 +3529,31 @@ element.classList.add("highlight");</code></pre>
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Méthode</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              En programmation, une méthode est une fonction associée à un objet
+              ou à une classe. Elle représente un comportement ou une action
+              spécifique que l'objet ou la classe est capable d'effectuer. Les
+              méthodes sont utilisées pour encapsuler la logique et les
+              opérations liées à un objet ou à une classe.
+            </p>
+            <p class="card-example">Exemple de méthode :</p>
+            <pre><code>class Voiture {
+          constructor(marque, modèle) {
+            this.marque = marque;
+            this.modèle = modèle;
+          }
+        démarrer() {
+        console.log("La voiture démarre !");
+        }
+        }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">Méthode AGILE</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -3664,6 +4034,23 @@ element.classList.add("highlight");</code></pre>
           }</code></pre>
           </div>
         </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">OWASP</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              OWASP (Open Web Application Security Project) est une communauté
+              mondiale dédiée à la sécurité des applications web. Elle fournit
+              des ressources, des outils, des recommandations et des bonnes
+              pratiques pour aider les développeurs à sécuriser leurs
+              applications web contre les vulnérabilités et les attaques.
+            </p>
+            <p class="card-example">Exemple de projet OWASP :</p>
+            <pre><code>OWASP Top 10 - Liste des 10 principales vulnérabilités de sécurité des applications web</code></pre>
+          </div>
+        </section>
         <h3 class="letter" data-letter="P">P</h3>
         <section class="card">
           <div class="card-header">
@@ -3848,6 +4235,49 @@ element.classList.add("highlight");</code></pre>
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Paramètres</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les paramètres sont des valeurs qui peuvent être passées à une
+              fonction ou à une méthode lors de son appel. Ils permettent de
+              transmettre des informations à la fonction, qui peut les utiliser
+              pour effectuer des opérations ou des calculs spécifiques. Les
+              paramètres sont définis dans la signature de la fonction et
+              peuvent être optionnels ou requis.
+            </p>
+            <p class="card-example">
+              Exemple de fonction avec des paramètres en JavaScript :
+            </p>
+            <pre><code>function multiply(a, b) {
+          return a * b;
+        }
+        var result = multiply(5, 3);
+        console.log(result); // Affiche 15</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Paramètres d'URL</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les paramètres d'URL, également appelés paramètres de requête,
+              sont des informations supplémentaires transmises dans une URL
+              après le point d'interrogation (?). Ils sont utilisés pour
+              transmettre des données à une page web ou à une API. Les
+              paramètres d'URL sont constitués d'une clé et d'une valeur,
+              séparées par le signe égal (=), et plusieurs paramètres peuvent
+              être séparés par le signe et commercial (&).
+            </p>
+            <p class="card-example">Exemple d'URL avec des paramètres :</p>
+            <pre><code>https://www.example.com/search?query=keyword&amp;page=2</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">payload</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -3940,7 +4370,49 @@ element.classList.add("highlight");</code></pre>
         &lt;/pre&gt;</code></pre>
           </div>
         </section>
-
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Préprocesseur</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Un préprocesseur est un outil utilisé dans le développement
+              logiciel pour effectuer des transformations sur le code source
+              avant sa compilation ou son interprétation. Il permet d'ajouter
+              des fonctionnalités supplémentaires au langage de programmation
+              utilisé, telles que des macros, des imports de fichiers, des
+              variables, etc.
+            </p>
+            <p class="card-example">Exemple de préprocesseur CSS (Sass) :</p>
+            <pre><code>$primary-color: #007bff;
+        body {
+          color: $primary-color;
+        }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Préproduction</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              La préproduction, également appelée environnement de préparation
+              ou d'essai, est une étape intermédiaire entre le développement et
+              la production d'un logiciel. C'est un environnement contrôlé et
+              isolé où les applications et les systèmes sont déployés pour
+              effectuer des tests approfondis, des validations finales et des
+              vérifications avant leur mise en production. La préproduction
+              permet de détecter et de corriger les problèmes potentiels avant
+              qu'ils n'affectent les utilisateurs finaux.
+            </p>
+            <p class="card-example">
+              Exemple de flux de déploiement logiciel :
+            </p>
+            <pre><code>Développement -&gt; Préproduction -&gt; Production</code></pre>
+          </div>
+        </section>
         <h3 class="letter" data-letter="Q">Q</h3>
         <section class="card">
           <div class="card-header">
@@ -4006,6 +4478,69 @@ element.classList.add("highlight");</code></pre>
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Référencement organique</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le référencement organique, également appelé référencement naturel
+              ou SEO (Search Engine Optimization), désigne l'ensemble des
+              techniques visant à améliorer la visibilité et le positionnement
+              d'un site web dans les résultats de recherche organiques des
+              moteurs de recherche. L'objectif du référencement organique est
+              d'optimiser le contenu, la structure et les méta-informations d'un
+              site web pour obtenir un meilleur classement et attirer un trafic
+              qualifié.
+            </p>
+            <p class="card-example">
+              Exemple de stratégie de référencement organique :
+            </p>
+            <pre><code>Optimisation des mots clés, création de contenu de qualité, amélioration de la structure du site, création de liens, etc.</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Référencement payant</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le référencement payant, également appelé SEA (Search Engine
+              Advertising), consiste à acheter des annonces publicitaires sur
+              les moteurs de recherche pour promouvoir un site web. Les annonces
+              payantes apparaissent généralement en haut ou en bas des résultats
+              de recherche et sont marquées comme étant des publicités. Le
+              référencement payant permet d'obtenir une visibilité immédiate et
+              de générer du trafic ciblé moyennant un coût par clic (CPC) ou
+              d'autres modèles de tarification.
+            </p>
+            <p class="card-example">
+              Exemple de plateforme de référencement payant :
+            </p>
+            <pre><code>Google Ads, Microsoft Advertising, Facebook Ads, etc.</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Recette</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              En développement logiciel, une recette, également appelée test
+              d'acceptation ou test fonctionnel, est une phase du cycle de vie
+              du logiciel qui consiste à vérifier si le logiciel répond aux
+              exigences fonctionnelles spécifiées. La recette implique
+              l'exécution de scénarios de test pour valider le bon
+              fonctionnement du logiciel, la conformité aux spécifications et la
+              satisfaction des besoins des utilisateurs.
+            </p>
+            <p class="card-example">Exemple de recette de logiciel :</p>
+            <pre><code>Validation des fonctionnalités, vérification des résultats attendus, détection des erreurs ou des anomalies, etc.</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">REGEX</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -4023,6 +4558,28 @@ element.classList.add("highlight");</code></pre>
             <pre><code>const regex = /[A-Za-z]+/;
         const result = regex.test('Hello');
         console.log(result); // true</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">relatif</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le positionnement relatif est une méthode de placement d'un
+              élément sur la page web par rapport à sa position normale.
+              L'élément positionné de manière relative peut être déplacé en
+              utilisant les propriétés "top", "right", "bottom" et "left", mais
+              il conserve sa place dans le flux normal du document. Les autres
+              éléments du document sont ajustés en fonction de sa position.
+            </p>
+            <p class="card-example">
+              Exemple d'utilisation de positionnement relatif :
+            </p>
+            <pre><code>&lt;div style="position: relative; top: 10px; left: 20px;"&gt;
+          Contenu positionné de manière relative
+        &lt;/div&gt;</code></pre>
           </div>
         </section>
         <section class="card">
@@ -4154,6 +4711,27 @@ element.classList.add("highlight");</code></pre>
             </p>
             <p class="card-example">Exemple de site web responsive :</p>
             <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">REST</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              REST (Representational State Transfer) est un style d'architecture
+              logicielle utilisé pour créer des services web. Il repose sur des
+              principes tels que l'utilisation des méthodes HTTP (GET, POST,
+              PUT, DELETE) pour effectuer des opérations sur des ressources et
+              l'utilisation de l'URI (Uniform Resource Identifier) pour
+              identifier les ressources.
+            </p>
+            <p class="card-example">Exemple d'utilisation de REST :</p>
+            <pre><code>GET /api/users - Récupérer la liste des utilisateurs
+        POST /api/users - Créer un nouvel utilisateur
+        PUT /api/users/{id} - Mettre à jour un utilisateur spécifique
+        DELETE /api/users/{id} - Supprimer un utilisateur spécifique</code></pre>
           </div>
         </section>
         <section class="card">
@@ -4337,7 +4915,30 @@ element.classList.add("highlight");</code></pre>
       }</code></pre>
           </div>
         </section>
-
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Scope/Portée</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le scope, ou portée, fait référence à la visibilité et à
+              l'accessibilité des variables, des fonctions et d'autres éléments
+              dans un programme. Il définit les parties du code où une variable
+              ou une fonction peut être référencée et utilisée. Le scope peut
+              être global (accessible partout dans le programme) ou local
+              (limité à une portion spécifique du code).
+            </p>
+            <p class="card-example">Exemple de portée locale :</p>
+            <pre><code>function maFonction() {
+          var x = 10; // variable locale à la fonction
+          console.log(x);
+        }
+        maFonction(); // Affiche 10
+        
+        console.log(x); // Erreur : x n'est pas défini en dehors de la fonction</code></pre>
+          </div>
+        </section>
         <section class="card">
           <div class="card-header">
             <h3 class="card-title">script, canvas, template, noscript, slot</h3>
@@ -4473,6 +5074,23 @@ element.classList.add("highlight");</code></pre>
             </p>
             <p class="card-example">Exemple de l'importance du SEO :</p>
             <pre><code>En optimisant le contenu et la structure d'un site web conformément aux bonnes pratiques de SEO, il est possible d'améliorer son classement dans les résultats de recherche, ce qui peut entraîner une augmentation du trafic organique et une meilleure visibilité en ligne.</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">SGBD</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              SGBD (Système de Gestion de Base de Données) est un logiciel
+              permettant de gérer et d'organiser des bases de données. Il offre
+              des fonctionnalités pour la création, la modification, la
+              consultation et la suppression des données stockées dans une base
+              de données.
+            </p>
+            <p class="card-example">Exemple de SGBD :</p>
+            <pre><code>MySQL, PostgreSQL, Oracle, Microsoft SQL Server, SQLite</code></pre>
           </div>
         </section>
         <section class="card">
@@ -5032,6 +5650,24 @@ line-height: 1.5em;
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">URL</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Une URL (Uniform Resource Locator) est une adresse web qui permet
+              d'accéder à une ressource sur Internet. Elle spécifie le protocole
+              à utiliser (http://, https://, ftp://, etc.), le nom de domaine,
+              le chemin d'accès et éventuellement les paramètres d'URL. Les URL
+              sont utilisées pour naviguer sur le web, accéder à des pages web,
+              des images, des vidéos, des fichiers, etc.
+            </p>
+            <p class="card-example">Exemple d'URL :</p>
+            <pre><code>https://www.example.com/page1.html</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">useContext</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -5442,6 +6078,36 @@ line-height: 1.5em;
         - Sidebar
         - Main Content
       Footer</code></pre>
+          </div>
+        </section>
+        <h3 class="letter" data-letter="X">X</h3>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">XHR</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              XHR (XMLHttpRequest) est un objet JavaScript utilisé pour
+              effectuer des requêtes HTTP asynchrones vers un serveur web. Il
+              permet d'envoyer des requêtes et de recevoir des réponses sans
+              avoir à recharger la page. L'objet XHR est couramment utilisé pour
+              implémenter des fonctionnalités de chargement de contenu
+              dynamique, de mise à jour de pages web sans rechargement complet,
+              etc.
+            </p>
+            <p class="card-example">
+              Exemple d'utilisation de XHR en JavaScript :
+            </p>
+            <pre><code>var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://api.example.com/data', true);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            var response = JSON.parse(xhr.responseText);
+            console.log(response);
+          }
+        };
+        xhr.send();</code></pre>
           </div>
         </section>
         <h3 class="letter" data-letter="Z">Z</h3>
