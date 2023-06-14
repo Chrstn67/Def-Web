@@ -1300,6 +1300,32 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Cookies</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Les cookies sont de petits fichiers texte stockés par le
+              navigateur sur l'ordinateur d'un utilisateur. Ils sont utilisés
+              pour stocker des informations spécifiques au site web, telles que
+              des préférences utilisateur, des paniers d'achat ou des données de
+              session. Les cookies permettent aux sites web de maintenir l'état
+              et de fournir une expérience personnalisée aux utilisateurs.
+            </p>
+            <p class="card-example">Exemple d'utilisation des cookies :</p>
+            <pre><code>// Stocker un cookie
+document.cookie = "nom=John Doe; expires=Fri, 31 Dec 2023 23:59:59 GMT; path=/";
+// Lire un cookie
+const nom = document.cookie.split(';')
+.map(cookie => cookie.trim())
+.find(cookie => cookie.startsWith("nom="))
+.split("=")[1];
+
+console.log(nom); // Affiche "John Doe"</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">CORS</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -1732,6 +1758,28 @@
         class User {
         // Propriétés et annotations ORM
         }</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">DOM (Document Object Model)</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Le DOM (Document Object Model) est une interface de programmation
+              pour les documents HTML et XML. Il représente la structure logique
+              d'un document et permet aux programmes d'accéder et de manipuler
+              le contenu, la structure et le style d'un document.
+            </p>
+            <p class="card-example">Exemple d'utilisation du DOM :</p>
+            <pre><code>// Accéder à un élément par son ID
+const element = document.getElementById("myElement");
+// Modifier le contenu d'un élément
+element.innerHTML = "Nouveau contenu";
+
+// Ajouter une classe à un élément
+element.classList.add("highlight");</code></pre>
           </div>
         </section>
         <section class="card">
@@ -3026,6 +3074,29 @@
         </section>
         <section class="card">
           <div class="card-header">
+            <h3 class="card-title">Méthode AGILE</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              La méthode Agile est une approche de gestion de projet basée sur
+              des principes de flexibilité, de collaboration et d'adaptation
+              continue. Elle se concentre sur la livraison de fonctionnalités de
+              manière itérative et incrémentale, en favorisant une communication
+              régulière entre les membres de l'équipe de développement et les
+              parties prenantes du projet. L'objectif principal de la méthode
+              Agile est de répondre rapidement aux changements et de s'adapter
+              aux besoins changeants du projet, tout en maintenant un haut
+              niveau de qualité.
+            </p>
+            <p class="card-example">
+              Exemple d'application de la méthode Agile :
+            </p>
+            <pre><code>Une équipe de développement logiciel utilise la méthode Agile pour développer une application web. Au lieu de planifier et de concevoir l'ensemble de l'application dès le début, l'équipe divise le projet en petites itérations appelées "sprints". À la fin de chaque sprint, l'équipe présente une version fonctionnelle de l'application, recueille les commentaires des utilisateurs et ajuste les prochaines itérations en conséquence. Cette approche permet à l'équipe de s'adapter rapidement aux changements, d'optimiser la satisfaction des utilisateurs et d'améliorer continuellement l'application.</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
             <h3 class="card-title">middleware</h3>
             <button class="card-toggle">Voir</button>
           </div>
@@ -3106,6 +3177,29 @@
             <p class="card-example">Exemple de MLD :</p>
             <pre><code>Table : Utilisateur
         Colonnes : ID (int), Nom (varchar), Email (varchar)</code></pre>
+          </div>
+        </section>
+        <section class="card">
+          <div class="card-header">
+            <h3 class="card-title">Mobile-first</h3>
+            <button class="card-toggle">Voir</button>
+          </div>
+          <div class="card-content">
+            <p class="card-definition">
+              Mobile-first est une approche de conception et de développement
+              web qui consiste à créer d'abord une version optimisée pour les
+              appareils mobiles, puis à ajouter des fonctionnalités et des
+              styles supplémentaires pour les appareils de bureau et les écrans
+              plus larges.
+            </p>
+            <p class="card-example">Exemple de l'approche Mobile-first :</p>
+            <pre><code>@media screen and (min-width: 768px) {
+          /* Styles pour les appareils de bureau */
+        }
+        
+        @media screen and (max-width: 767px) {
+          /* Styles pour les appareils mobiles */
+        }</code></pre>
           </div>
         </section>
         <section class="card">
@@ -3718,6 +3812,7 @@
         &lt;/pre&gt;</code></pre>
           </div>
         </section>
+
         <h3 class="letter" data-letter="Q">Q</h3>
         <section class="card">
           <div class="card-header">
