@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Def'Web</title>
+  </head>
+  <body>
+    <header>
+      <h1>Def'Web</h1>
+      <section class="button-menu">
+        <a href="../index.html">
+          <button class="menu">Accueil</button>
+        </a>
+        <a href="../Langages/langages.html">
+          <button class="menu">Def' Langages</button>
+        </a>
+        <a href="../Frameworks/frameworks.html">
+          <button class="menu">Def' Frameworks</button>
+        </a>
+        <a href="../Vocabulaire/vocabulaire.html">
+          <button class="menu">Def' Vocabulaire</button>
+        </a>
+        <a href="../VS/vs.html">
+          <button class="menu">Def' VS</button>
+        </a>
+      </section>
+      <form>
+        <input name="searchNotion" id="searchNotion" placeholder="Rechercher" />
+        <button type="submit">Rechercher</button>
+        <p id="notionMessage"></p>
+      </form>
+      <div id="alphabetButtons"></div>
+    </header>
+    <button class="scroll-top">Retour en haut</button>
+    <main>
+      <section class="category">Chargement en cours</section>
+    </main>
+
+    <footer>
+      <a href="../mentions_legales.html">Mentions légales</a>
+      <p>&#9426; 2023</p>
+    </footer>
+    <script src="vocabulaireData.js"></script>
+    <script src="vocabulaire.js"></script>
+  </body>
+</html>
